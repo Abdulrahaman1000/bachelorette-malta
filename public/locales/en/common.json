@@ -1,0 +1,122 @@
+ {
+  "navigation": {
+    "whatWeOffer": "What We Offer",
+    "booking": "Booking",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Bachelorette Malta",
+    "motto": "Before you say 'I do' – you say 'cheers' in Malta."
+  },
+  "about": {
+    "title": "About Us",
+    "motto": "Because every story deserves an unforgettable beginning.",
+    "text": [
+      "Welcome to the world of Bachelor & Bachelorette Parties Malta, where ordinary days turn into legendary memories.",
+      "We specialize in planning bachelor and bachelorette parties that go beyond the usual – moments filled with emotion, adventure, laughter, and elegance.",
+      "Our mission is to create a tailor-made experience for every group – whether you're dreaming of a luxury yacht escape, an action-packed adrenaline weekend, or simply quality time with friends in Malta's stunning surroundings.",
+      "We work exclusively with trusted partners and provide accommodation in stylish private farmhouses. From airport pickup to the final toast, we take care of every detail.",
+      "We believe a bachelorette party should be unique, stress-free, and flawlessly planned.",
+      "And that's exactly what we deliver."
+    ]
+  },
+  "whatWeOffer": {
+    "title": "What We Offer",
+    "packages": {
+      "luxury": {
+        "title": "Luxury Package",
+        "features": [
+          "Limousine ride",
+          "Private yacht with drinks",
+          "Go-kart racing",
+          "Private farmhouse with pool",
+          "VIP nightlife"
+        ]
+      },
+      "adventure": {
+        "title": "Adventure Package",
+        "features": [
+          "Jetski",
+          "Paintball",
+          "Kayaking or paddleboarding",
+          "Quad bikes",
+          "Farmhouse with BBQ"
+        ]
+      },
+      "budget": {
+        "title": "On Budget Package",
+        "features": [
+          "Laser game",
+          "Karaoke or bowling",
+          "Full-day island tour",
+          "Boat trip",
+          "Cozy private farmhouse"
+        ]
+      }
+    }
+  },
+  "booking": {
+    "title": "Booking",
+    "form": {
+      "date": "Date selection",
+      "country": "Country you're coming from",
+      "duration": "Duration",
+      "durationOptions": {
+        "3days": "3 days",
+        "4days": "4 days"
+      },
+      "package": "Package",
+      "packageOptions": {
+        "luxury": "Luxury",
+        "adventure": "Adventure",
+        "budget": "On Budget"
+      },
+      "bookingType": "Booking type",
+      "bookingTypeOptions": {
+        "binding": "Binding Booking",
+        "nonBinding": "Non-binding Booking"
+      },
+      "submit": "Submit"
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "email": "bachelorettemalta@gmail.com",
+    "facebook": "facebook.com/bachelorettemalta",
+    "instagram": "@bachelorettemalta",
+    "phone": "+356 77381284"
+  },
+  "terms": {
+    "title": "Terms and Conditions",
+    "sections": [
+      {
+        "title": "Introduction",
+        "content": "By booking or using our services, you agree to these terms and conditions set by \"Bachelor/Bachelorette Parties Malta\"."
+      },
+      {
+        "title": "Booking & Payment",
+        "content": "All bookings must be confirmed in advance through our website or by direct contact. Full payment is required at the time of booking to secure your reservation. Pricing may vary based on package, number of participants, and season."
+      },
+      {
+        "title": "Cancellation & Refund Policy",
+        "content": "All payments are final. No refunds will be issued under any circumstances, including cancellations, missed events, or changes of plans. We strongly recommend clients purchase personal travel insurance in case of unexpected issues."
+      },
+      {
+        "title": "Changes or Cancellations by Us",
+        "content": "If an event must be canceled or modified due to safety concerns, weather, or availability, we will attempt to provide a suitable replacement activity. No monetary refunds will be given. Replacements are offered at our discretion."
+      },
+      {
+        "title": "Responsibility & Liability",
+        "content": "Participation in all events is at your own risk. We are not liable for injuries, property damage, or losses. All guests are expected to behave respectfully and responsibly."
+      },
+      {
+        "title": "Age & Conduct",
+        "content": "Minimum age is 18 for participation. Inappropriate behavior may lead to removal from the event with no refund or compensation."
+      },
+      {
+        "title": "Agreement",
+        "content": "By booking, you confirm that you understand and accept these terms fully."
+      }
+    ]
+  }
+}

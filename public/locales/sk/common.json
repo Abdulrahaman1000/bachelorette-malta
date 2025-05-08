@@ -1,0 +1,122 @@
+ {
+"navigation": {
+"whatWeOffer": "Naša Ponuka",
+"booking": "Rezervácia",
+"contact": "Kontakt"
+},
+"hero": {
+"title": "Bachelorette Malta",
+"motto": "Pred tým, než poviete 'áno' – pripite si na Malte."
+},
+"about": {
+"title": "O Nás",
+"motto": "Pretože každý príbeh si zaslúži nezabudnuteľný začiatok.",
+"text": [
+"Vitajte vo svete Bachelor & Bachelorette Parties Malta, kde sa obyčajné dni menia na legendárne spomienky.",
+"Špecializujeme sa na plánovanie rozlúčok so slobodou, ktoré presahujú bežný rámec – momenty plné emócií, dobrodružstva, smiechu a elegancie.",
+"Našou misiou je vytvoriť na mieru prispôsobenú skúsenosť pre každú skupinu – či už sníte o úniku na luxusnej jachte, víkende plnom adrenalínu a akcie, alebo jednoducho o kvalitnom čase s priateľmi v úžasnom prostredí Malty.",
+"Pracujeme výhradne s dôveryhodnými partnermi a poskytujeme ubytovanie v štýlových súkromných farmárskych domoch. Od vyzdvihnutia na letisku až po posledný prípitok sa staráme o každý detail.",
+"Veríme, že rozlúčka so slobodou by mala byť jedinečná, bez stresu a dokonale naplánovaná.",
+"A presne to poskytujeme."
+]
+},
+"whatWeOffer": {
+"title": "Naša Ponuka",
+"packages": {
+"luxury": {
+"title": "Luxusný Balík",
+"features": [
+"Jazda limuzínou",
+"Súkromná jachta s nápojmi",
+"Závody motokár",
+"Súkromný farmársky dom s bazénom",
+"VIP nočný život"
+]
+},
+"adventure": {
+"title": "Dobrodružný Balík",
+"features": [
+"Vodný skúter",
+"Paintball",
+"Kajak alebo paddleboarding",
+"Štvorkolky",
+"Farmársky dom s grilom"
+]
+},
+"budget": {
+"title": "Ekonomický Balík",
+"features": [
+"Laserová hra",
+"Karaoke alebo bowling",
+"Celodenný výlet po ostrove",
+"Výlet loďou",
+"Útulný súkromný farmársky dom"
+]
+}
+}
+},
+"booking": {
+"title": "Rezervácia",
+"form": {
+"date": "Výber dátumu",
+"country": "Krajina, z ktorej prichádzate",
+"duration": "Trvanie",
+"durationOptions": {
+"3days": "3 dni",
+"4days": "4 dni"
+},
+"package": "Balík",
+"packageOptions": {
+"luxury": "Luxusný",
+"adventure": "Dobrodružný",
+"budget": "Ekonomický"
+},
+"bookingType": "Typ rezervácie",
+"bookingTypeOptions": {
+"binding": "Záväzná rezervácia",
+"nonBinding": "Nezáväzná rezervácia"
+},
+"submit": "Odoslať"
+}
+},
+"contact": {
+"title": "Kontakt",
+"email": "bachelorettemalta@gmail.com",
+"facebook": "facebook.com/bachelorettemalta",
+"instagram": "@bachelorettemalta",
+"phone": "+356 77381284"
+},
+"terms": {
+"title": "Obchodné Podmienky",
+"sections": [
+{
+"title": "Úvod",
+"content": "Rezerváciou alebo používaním našich služieb súhlasíte s týmito podmienkami stanovenými spoločnosťou \"Bachelor/Bachelorette Parties Malta\"."
+},
+{
+"title": "Rezervácia a Platba",
+"content": "Všetky rezervácie musia byť potvrdené vopred prostredníctvom našej webovej stránky alebo priamym kontaktom. Na zabezpečenie vašej rezervácie sa vyžaduje plná platba v čase rezervácie. Ceny sa môžu líšiť v závislosti od balíka, počtu účastníkov a sezóny."
+},
+{
+"title": "Politika Zrušenia a Vrátenia Peňazí",
+"content": "Všetky platby sú konečné. Za žiadnych okolností nebudú vydané žiadne refundácie, vrátane zrušení, zmeškaných podujatí alebo zmien plánov. Dôrazne odporúčame klientom, aby si zakúpili osobné cestovné poistenie pre prípad neočakávaných problémov."
+},
+{
+"title": "Zmeny alebo Zrušenia z Našej Strany",
+"content": "Ak musí byť podujatie zrušené alebo upravené z dôvodu bezpečnostných obáv, počasia alebo dostupnosti, pokúsime sa poskytnúť vhodnú náhradnú aktivitu. Peňažné refundácie nebudú poskytnuté. Náhrady sú ponúkané podľa nášho uváženia."
+},
+{
+"title": "Zodpovednosť",
+"content": "Účasť na všetkých podujatiach je na vlastné riziko. Nenesieme zodpovednosť za zranenia, škody na majetku alebo straty. Od všetkých hostí sa očakáva rešpektujúce a zodpovedné správanie."
+},
+{
+"title": "Vek a Správanie",
+"content": "Minimálny vek pre účasť je 18 rokov. Nevhodné správanie môže viesť k vylúčeniu z podujatia bez refundácie alebo kompenzácie."
+},
+{
+"title": "Dohoda",
+"content": "Rezerváciou potvrdzujete, že plne rozumiete a prijímate tieto podmienky."
+}
+]
+}
+}

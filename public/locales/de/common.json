@@ -1,0 +1,122 @@
+{
+    "navigation": {
+      "whatWeOffer": "Unser Angebot",
+      "booking": "Buchung",
+      "contact": "Kontakt"
+    },
+    "hero": {
+      "title": "Bachelorette Malta",
+      "motto": "Bevor du „Ja sagst – stoßt ihr in Malta an."
+    },
+    "about": {
+      "title": "Über Uns",
+      "motto": "Weil jede Geschichte einen unvergesslichen Anfang verdient.",
+      "text": [
+        "Willkommen in der Welt der Bachelor & Bachelorette Parties Malta, wo gewöhnliche Tage zu legendären Erinnerungen werden.",
+        "Wir haben uns auf die Planung von Junggesellen- und Junggesellinnenabschieden spezialisiert, die über das Übliche hinausgehen – Momente voller Emotionen, Abenteuer, Lachen und Eleganz.",
+        "Unsere Mission ist es, für jede Gruppe ein maßgeschneidertes Erlebnis zu schaffen – ob Sie von einer Luxusyacht-Flucht träumen, einem actionreichen Adrenalin-Wochenende oder einfach nur Qualitätszeit mit Freunden in der atemberaubenden Umgebung Maltas.",
+        "Wir arbeiten ausschließlich mit vertrauenswürdigen Partnern zusammen und bieten Unterkünfte in stilvollen privaten Landhäusern. Von der Abholung am Flughafen bis zum letzten Toast kümmern wir uns um jedes Detail.",
+        "Wir glauben, dass ein Junggesellinnenabschied einzigartig, stressfrei und tadellos geplant sein sollte.",
+        "Und genau das liefern wir."
+      ]
+    },
+    "whatWeOffer": {
+      "title": "Unser Angebot",
+      "packages": {
+        "luxury": {
+          "title": "Luxus-Paket",
+          "features": [
+            "Limousinenfahrt",
+            "Private Yacht mit Getränken",
+            "Go-Kart-Rennen",
+            "Privates Landhaus mit Pool",
+            "VIP-Nachtleben"
+          ]
+        },
+        "adventure": {
+          "title": "Abenteuer-Paket",
+          "features": [
+            "Jetski",
+            "Paintball",
+            "Kajakfahren oder Paddleboarding",
+            "Quads",
+            "Landhaus mit Grillmöglichkeit"
+          ]
+        },
+        "budget": {
+          "title": "Budget-Paket",
+          "features": [
+            "Laserspiel",
+            "Karaoke oder Bowling",
+            "Ganztägige Inselrundfahrt",
+            "Bootsfahrt",
+            "Gemütliches privates Landhaus"
+          ]
+        }
+      }
+    },
+    "booking": {
+      "title": "Buchung",
+      "form": {
+        "date": "Datumsauswahl",
+        "country": "Herkunftsland",
+        "duration": "Dauer",
+        "durationOptions": {
+          "3days": "3 Tage",
+          "4days": "4 Tage"
+        },
+        "package": "Paket",
+        "packageOptions": {
+          "luxury": "Luxus",
+          "adventure": "Abenteuer",
+          "budget": "Budget"
+        },
+        "bookingType": "Buchungsart",
+        "bookingTypeOptions": {
+          "binding": "Verbindliche Buchung",
+          "nonBinding": "Unverbindliche Buchung"
+        },
+        "submit": "Absenden"
+      }
+    },
+    "contact": {
+      "title": "Kontakt",
+      "email": "bachelorettemalta@gmail.com",
+      "facebook": "facebook.com/bachelorettemalta",
+      "instagram": "@bachelorettemalta",
+      "phone": "+356 77381284"
+    },
+    "terms": {
+      "title": "Allgemeine Geschäftsbedingungen",
+      "sections": [
+        {
+          "title": "Einleitung",
+          "content": "Mit der Buchung oder Nutzung unserer Dienstleistungen stimmen Sie diesen Geschäftsbedingungen von \"Bachelor/Bachelorette Parties Malta\" zu."
+        },
+        {
+          "title": "Buchung & Zahlung",
+          "content": "Alle Buchungen müssen im Voraus über unsere Website oder durch direkten Kontakt bestätigt werden. Die vollständige Zahlung ist zum Zeitpunkt der Buchung erforderlich, um Ihre Reservierung zu sichern. Die Preise können je nach Paket, Teilnehmerzahl und Saison variieren."
+        },
+        {
+          "title": "Stornierung & Rückerstattung",
+          "content": "Alle Zahlungen sind endgültig. Unter keinen Umständen werden Rückerstattungen gewährt, einschließlich Stornierungen, verpasster Veranstaltungen oder Planänderungen. Wir empfehlen unseren Kunden dringend, eine persönliche Reiseversicherung für unerwartete Probleme abzuschließen."
+        },
+        {
+          "title": "Änderungen oder Stornierungen durch uns",
+          "content": "Wenn eine Veranstaltung aus Sicherheitsgründen, wegen des Wetters oder der Verfügbarkeit abgesagt oder geändert werden muss, werden wir versuchen, eine geeignete Ersatzaktivität anzubieten. Es werden keine Gelderstattungen gewährt. Ersatzleistungen werden nach unserem Ermessen angeboten."
+        },
+        {
+          "title": "Verantwortung & Haftung",
+          "content": "Die Teilnahme an allen Veranstaltungen erfolgt auf eigene Gefahr. Wir haften nicht für Verletzungen, Sachschäden oder Verluste. Von allen Gästen wird erwartet, dass sie sich respektvoll und verantwortungsbewusst verhalten."
+        },
+        {
+          "title": "Alter & Verhalten",
+          "content": "Das Mindestalter für die Teilnahme beträgt 18 Jahre. Unangemessenes Verhalten kann zum Ausschluss von der Veranstaltung führen, ohne Rückerstattung oder Entschädigung."
+        },
+        {
+          "title": "Vereinbarung",
+          "content": "Mit der Buchung bestätigen Sie, dass Sie diese Bedingungen vollständig verstehen und akzeptieren."
+        }
+      ]
+    }
+}

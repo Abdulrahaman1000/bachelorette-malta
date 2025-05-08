@@ -1,0 +1,122 @@
+{
+    "navigation": {
+      "whatWeOffer": "Le Nostre Offerte",
+      "booking": "Prenotazione",
+      "contact": "Contatti"
+    },
+    "hero": {
+      "title": "Bachelorette Malta",
+      "motto": "Prima di dire 'sì' – brindateci a Malta."
+    },
+    "about": {
+      "title": "Chi Siamo",
+      "motto": "Perché ogni storia merita un inizio indimenticabile.",
+      "text": [
+        "Benvenuti nel mondo di Bachelor & Bachelorette Parties Malta, dove i giorni ordinari si trasformano in ricordi leggendari.",
+        "Siamo specializzati nell'organizzazione di addii al celibato e nubilato che vanno oltre l'usuale – momenti pieni di emozione, avventura, risate ed eleganza.",
+        "La nostra missione è creare un'esperienza su misura per ogni gruppo – che tu stia sognando una fuga su uno yacht di lusso, un weekend adrenalinico pieno di azione, o semplicemente del tempo di qualità con gli amici nei meravigliosi dintorni di Malta.",
+        "Lavoriamo esclusivamente con partner fidati e forniamo alloggi in eleganti case coloniche private. Dal prelievo in aeroporto fino all'ultimo brindisi, ci occupiamo di ogni dettaglio.",
+        "Crediamo che un addio al nubilato debba essere unico, senza stress e pianificato impeccabilmente.",
+        "Ed è esattamente ciò che offriamo."
+      ]
+    },
+    "whatWeOffer": {
+      "title": "Le Nostre Offerte",
+      "packages": {
+        "luxury": {
+          "title": "Pacchetto Lusso",
+          "features": [
+            "Giro in limousine",
+            "Yacht privato con bevande",
+            "Gare di go-kart",
+            "Casa colonica privata con piscina",
+            "Vita notturna VIP"
+          ]
+        },
+        "adventure": {
+          "title": "Pacchetto Avventura",
+          "features": [
+            "Jetski",
+            "Paintball",
+            "Kayak o paddleboarding",
+            "Quad",
+            "Casa colonica con barbecue"
+          ]
+        },
+        "budget": {
+          "title": "Pacchetto Economico",
+          "features": [
+            "Gioco laser",
+            "Karaoke o bowling",
+            "Tour dell'isola di un giorno intero",
+            "Gita in barca",
+            "Confortevole casa colonica privata"
+          ]
+        }
+      }
+    },
+    "booking": {
+      "title": "Prenotazione",
+      "form": {
+        "date": "Selezione data",
+        "country": "Paese di provenienza",
+        "duration": "Durata",
+        "durationOptions": {
+          "3days": "3 giorni",
+          "4days": "4 giorni"
+        },
+        "package": "Pacchetto",
+        "packageOptions": {
+          "luxury": "Lusso",
+          "adventure": "Avventura",
+          "budget": "Economico"
+        },
+        "bookingType": "Tipo di prenotazione",
+        "bookingTypeOptions": {
+          "binding": "Prenotazione vincolante",
+          "nonBinding": "Prenotazione non vincolante"
+        },
+        "submit": "Invia"
+      }
+    },
+    "contact": {
+      "title": "Contatti",
+      "email": "bachelorettemalta@gmail.com",
+      "facebook": "facebook.com/bachelorettemalta",
+      "instagram": "@bachelorettemalta",
+      "phone": "+356 77381284"
+    },
+    "terms": {
+      "title": "Termini e Condizioni",
+      "sections": [
+        {
+          "title": "Introduzione",
+          "content": "Prenotando o utilizzando i nostri servizi, accetti questi termini e condizioni stabiliti da \"Bachelor/Bachelorette Parties Malta\"."
+        },
+        {
+          "title": "Prenotazione e Pagamento",
+          "content": "Tutte le prenotazioni devono essere confermate in anticipo tramite il nostro sito web o contatto diretto. Il pagamento completo è richiesto al momento della prenotazione per garantire la tua prenotazione. I prezzi possono variare in base al pacchetto, al numero di partecipanti e alla stagione."
+        },
+        {
+          "title": "Politica di Cancellazione e Rimborso",
+          "content": "Tutti i pagamenti sono definitivi. Nessun rimborso sarà emesso in alcuna circostanza, incluse cancellazioni, eventi persi o cambiamenti di programma. Raccomandiamo vivamente ai clienti di acquistare un'assicurazione di viaggio personale in caso di problemi imprevisti."
+        },
+        {
+          "title": "Modifiche o Cancellazioni da Parte Nostra",
+          "content": "Se un evento deve essere cancellato o modificato a causa di problemi di sicurezza, meteo o disponibilità, cercheremo di fornire un'attività sostitutiva adeguata. Non verranno concessi rimborsi monetari. Le sostituzioni sono offerte a nostra discrezione."
+        },
+        {
+          "title": "Responsabilità",
+          "content": "La partecipazione a tutti gli eventi è a tuo rischio. Non siamo responsabili per lesioni, danni alla proprietà o perdite. Tutti gli ospiti sono tenuti a comportarsi in modo rispettoso e responsabile."
+        },
+        {
+          "title": "Età e Condotta",
+          "content": "L'età minima per la partecipazione è di 18 anni. Un comportamento inappropriato può portare all'esclusione dall'evento senza rimborso o compensazione."
+        },
+        {
+          "title": "Accordo",
+          "content": "Prenotando, confermi di comprendere e accettare pienamente questi termini."
+        }
+      ]
+    }
+  }

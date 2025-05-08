@@ -1,0 +1,122 @@
+{
+    "navigation": {
+      "whatWeOffer": "Nos Offres",
+      "booking": "Réservation",
+      "contact": "Contact"
+    },
+    "hero": {
+      "title": "Bachelorette Malta",
+      "motto": "Avant de dire 'oui' – vous trinquez à Malte."
+    },
+    "about": {
+      "title": "À Propos",
+      "motto": "Parce que chaque histoire mérite un début inoubliable.",
+      "text": [
+        "Bienvenue dans le monde des Bachelor & Bachelorette Parties Malta, où les jours ordinaires se transforment en souvenirs légendaires.",
+        "Nous sommes spécialisés dans l'organisation d'enterrements de vie de jeune fille et de garçon qui vont au-delà de l'ordinaire – des moments remplis d'émotion, d'aventure, de rires et d'élégance.",
+        "Notre mission est de créer une expérience sur mesure pour chaque groupe – que vous rêviez d'une escapade en yacht de luxe, d'un week-end d'adrénaline riche en action, ou simplement de temps de qualité avec des amis dans les environs magnifiques de Malte.",
+        "Nous travaillons exclusivement avec des partenaires de confiance et proposons des hébergements dans des fermes privées élégantes. De la prise en charge à l'aéroport jusqu'au dernier toast, nous nous occupons de chaque détail.",
+        "Nous croyons qu'un enterrement de vie de jeune fille doit être unique, sans stress et parfaitement planifié.",
+        "Et c'est exactement ce que nous offrons."
+      ]
+    },
+    "whatWeOffer": {
+      "title": "Nos Offres",
+      "packages": {
+        "luxury": {
+          "title": "Forfait Luxe",
+          "features": [
+            "Balade en limousine",
+            "Yacht privé avec boissons",
+            "Course de karting",
+            "Ferme privée avec piscine",
+            "Vie nocturne VIP"
+          ]
+        },
+        "adventure": {
+          "title": "Forfait Aventure",
+          "features": [
+            "Jet-ski",
+            "Paintball",
+            "Kayak ou paddle",
+            "Quads",
+            "Ferme avec barbecue"
+          ]
+        },
+        "budget": {
+          "title": "Forfait Économique",
+          "features": [
+            "Jeu laser",
+            "Karaoké ou bowling",
+            "Tour de l'île d'une journée",
+            "Excursion en bateau",
+            "Ferme privée confortable"
+          ]
+        }
+      }
+    },
+    "booking": {
+      "title": "Réservation",
+      "form": {
+        "date": "Sélection de date",
+        "country": "Pays de provenance",
+        "duration": "Durée",
+        "durationOptions": {
+          "3days": "3 jours",
+          "4days": "4 jours"
+        },
+        "package": "Forfait",
+        "packageOptions": {
+          "luxury": "Luxe",
+          "adventure": "Aventure",
+          "budget": "Économique"
+        },
+        "bookingType": "Type de réservation",
+        "bookingTypeOptions": {
+          "binding": "Réservation ferme",
+          "nonBinding": "Réservation non contraignante"
+        },
+        "submit": "Soumettre"
+      }
+    },
+    "contact": {
+      "title": "Contact",
+      "email": "bachelorettemalta@gmail.com",
+      "facebook": "facebook.com/bachelorettemalta",
+      "instagram": "@bachelorettemalta",
+      "phone": "+356 77381284"
+    },
+    "terms": {
+      "title": "Conditions Générales",
+      "sections": [
+        {
+          "title": "Introduction",
+          "content": "En réservant ou en utilisant nos services, vous acceptez ces conditions générales établies par \"Bachelor/Bachelorette Parties Malta\"."
+        },
+        {
+          "title": "Réservation & Paiement",
+          "content": "Toutes les réservations doivent être confirmées à l'avance via notre site Web ou par contact direct. Le paiement intégral est requis au moment de la réservation pour garantir votre réservation. Les prix peuvent varier en fonction du forfait, du nombre de participants et de la saison."
+        },
+        {
+          "title": "Politique d'annulation & de remboursement",
+          "content": "Tous les paiements sont définitifs. Aucun remboursement ne sera émis en aucune circonstance, y compris les annulations, les événements manqués ou les changements de plans. Nous recommandons vivement à nos clients de souscrire une assurance voyage personnelle en cas de problèmes inattendus."
+        },
+        {
+          "title": "Modifications ou annulations par nous",
+          "content": "Si un événement doit être annulé ou modifié en raison de problèmes de sécurité, de météo ou de disponibilité, nous tenterons de fournir une activité de remplacement appropriée. Aucun remboursement monétaire ne sera effectué. Les remplacements sont offerts à notre discrétion."
+        },
+        {
+          "title": "Responsabilité",
+          "content": "La participation à tous les événements est à vos propres risques. Nous ne sommes pas responsables des blessures, des dommages matériels ou des pertes. Tous les invités sont censés se comporter de manière respectueuse et responsable."
+        },
+        {
+          "title": "Âge & Conduite",
+          "content": "L'âge minimum pour participer est de 18 ans. Un comportement inapproprié peut entraîner l'exclusion de l'événement sans remboursement ni compensation."
+        },
+        {
+          "title": "Accord",
+          "content": "En réservant, vous confirmez que vous comprenez et acceptez pleinement ces conditions."
+        }
+      ]
+    }
+  }
