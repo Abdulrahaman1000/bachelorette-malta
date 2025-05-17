@@ -1,17 +1,9 @@
-// app/[locale]/page.tsx
-import ClientPage from './ClientPage';
-import { Suspense } from 'react';
+import { Suspense } from "react";
+import ClientPage from "./ClientPage";
 
-// Static metadata
-export const metadata = {
-  title: 'Your Site Title',
-  description: 'Your site description',
-};
-
-// Server component that passes locale to client component
-export default function Page({ params }: { params: { locale: string } }) {
+export default async function Page({ params }: { params: { locale: string } }) {
   const { locale } = params;
-  
+
   return (
     <Suspense fallback={<div>Loading...</div>}>
       <ClientPage locale={locale} />

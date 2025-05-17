@@ -1,25 +1,55 @@
  {
-    "navigation": {
-      "whatWeOffer": "Nuestras Ofertas",
-      "booking": "Reservas",
-      "contact": "Contacto"
+    "header": {
+     "whatWeOffer": "Lo que ofrecemos",
+    "booking": "Reservas",
+    "contact": "Contacto",
+    "toggleMenu": "Alternar menú"
     },
     "hero": {
-      "title": "Bachelorette Malta",
-      "motto": "Antes de decir 'sí quiero' – brindáis en Malta."
+       "title": "Despedida de soltera en Malta",
+      "motto": "Antes de decir 'sí, acepto', di '¡salud!' en Malta.",
+      "discoverPackages": "Descubre paquetes",
+      "bookNow": "Reserva ahora",
+      "imageAlt": "Costa de Malta"
     },
-    "about": {
-      "title": "Sobre Nosotros",
-      "motto": "Porque cada historia merece un comienzo inolvidable.",
-      "text": [
-        "Bienvenidos al mundo de Bachelor & Bachelorette Parties Malta, donde los días ordinarios se convierten en recuerdos legendarios.",
-        "Nos especializamos en planificar despedidas de soltero y soltera que van más allá de lo habitual – momentos llenos de emoción, aventura, risas y elegancia.",
-        "Nuestra misión es crear una experiencia a medida para cada grupo – ya sea que sueñes con una escapada en un yate de lujo, un fin de semana lleno de adrenalina y acción, o simplemente tiempo de calidad con amigos en los impresionantes alrededores de Malta.",
-        "Trabajamos exclusivamente con socios de confianza y proporcionamos alojamiento en elegantes casas rurales privadas. Desde la recogida en el aeropuerto hasta el brindis final, nos encargamos de cada detalle.",
-        "Creemos que una despedida de soltera debe ser única, sin estrés y perfectamente planificada.",
-        "Y eso es exactamente lo que ofrecemos."
-      ]
-    },
+   
+  "about": {
+    "title": "Sobre nosotros",
+    "motto": "Porque cada historia merece un comienzo inolvidable.",
+    "text": [
+      "Bienvenido al mundo de Bachelor & Bachelorette Parties Malta, donde los días ordinarios se convierten en recuerdos legendarios.",
+      "Nos especializamos en organizar despedidas de soltero y soltera que van más allá de lo convencional – momentos llenos de emoción, aventura, risas y estilo.",
+      "Nuestra misión es crear una experiencia a medida para cada grupo – ya sea que sueñes con una escapada en yate de lujo, un fin de semana lleno de adrenalina o simplemente momentos especiales con amigos en los paisajes impresionantes de Malta.",
+      "Trabajamos exclusivamente con socios de confianza y ofrecemos alojamiento en elegantes casas rurales privadas. Desde la recogida en el aeropuerto hasta el brindis final, nos encargamos de cada detalle.",
+      "Creemos que una despedida de soltera debe ser única, sin estrés y perfectamente organizada.",
+      "Y eso es exactamente lo que ofrecemos."
+    ],
+    "coreFeaturesTitle": "Nuestras características clave",
+    "features": [
+      {
+        "title": "Planificación experta",
+        "description": "Itinerarios personalizados para tu grupo",
+        "icon": "fa-calendar"
+      },
+      {
+        "title": "Conocimiento local",
+        "description": "Acceso exclusivo a Malta.",
+        "icon": "fa-map-marker-alt"
+      },
+      {
+        "title": "Tamaños de grupo",
+        "description": "Ideal para grupos de todos los tamaños, desde reuniones íntimas hasta celebraciones grandes.",
+        "icon": "fa-users"
+      },
+      {
+        "title": "Soporte completo",
+        "description": "Asistencia 24/7 durante tu estancia para garantizar que todo funcione perfectamente.",
+        "icon": "fa-hands-helping"
+      }
+    ]
+  },
+
+
     "whatWeOffer": {
       "title": "Nuestras Ofertas",
       "packages": {
@@ -79,44 +109,141 @@
         "submit": "Enviar"
       }
     },
-    "contact": {
-      "title": "Contacto",
-      "email": "bachelorettemalta@gmail.com",
-      "facebook": "facebook.com/bachelorettemalta",
-      "instagram": "@bachelorettemalta",
-      "phone": "+356 77381284"
+  
+  "Contact": {
+    "title": "Contáctanos",
+    "description": "¡Ponte en contacto con nosotros y organiza la despedida de soltera perfecta en Malta!",
+    "imageAlt": "Despedida de soltera en Malta",
+    "emailLabel": "Correo electrónico",
+    "facebookLabel": "Facebook",
+    "instagramLabel": "Instagram",
+    "formTitle": "Envíanos un mensaje",
+    "form": {
+      "name": "Tu nombre",
+      "email": "Tu correo electrónico",
+      "message": "Tu mensaje",
+      "submit": "Enviar mensaje"
+    }
+  },
+
+
+ 
+  "terms": {
+    "title": "Términos y Condiciones",
+    "subtitle": "Por favor, lea estos términos cuidadosamente antes de reservar su experiencia inolvidable en Malta",
+    "heroImageAlt": "Costa de Malta",
+    "intro": "En Bachelor/Bachelorette Parties Malta, nos esforzamos por ofrecer experiencias excepcionales para su celebración. Para asegurar claridad y entendimiento mutuo, hemos detallado nuestros términos y condiciones a continuación.",
+    "section1": {
+      "title": "Introducción",
+      "content": [
+        "Al reservar o utilizar nuestros servicios, usted acepta estos términos y condiciones establecidos por \"Bachelor/Bachelorette Parties Malta\"."
+      ]
     },
-    "terms": {
-      "title": "Términos y Condiciones",
-      "sections": [
-        {
-          "title": "Introducción",
-          "content": "Al reservar o utilizar nuestros servicios, aceptas estos términos y condiciones establecidos por \"Bachelor/Bachelorette Parties Malta\"."
-        },
-        {
-          "title": "Reserva y Pago",
-          "content": "Todas las reservas deben confirmarse con antelación a través de nuestro sitio web o por contacto directo. Se requiere el pago completo en el momento de la reserva para garantizar tu reserva. Los precios pueden variar según el paquete, el número de participantes y la temporada."
-        },
-        {
-          "title": "Política de Cancelación y Reembolso",
-          "content": "Todos los pagos son definitivos. No se emitirán reembolsos bajo ninguna circunstancia, incluidas cancelaciones, eventos perdidos o cambios de planes. Recomendamos encarecidamente a los clientes que adquieran un seguro de viaje personal en caso de problemas inesperados."
-        },
-        {
-          "title": "Cambios o Cancelaciones por Nuestra Parte",
-          "content": "Si un evento debe ser cancelado o modificado debido a preocupaciones de seguridad, clima o disponibilidad, intentaremos proporcionar una actividad de reemplazo adecuada. No se darán reembolsos monetarios. Los reemplazos se ofrecen a nuestra discreción."
-        },
-        {
-          "title": "Responsabilidad",
-          "content": "La participación en todos los eventos es bajo tu propio riesgo. No somos responsables por lesiones, daños a la propiedad o pérdidas. Se espera que todos los invitados se comporten de manera respetuosa y responsable."
-        },
-        {
-          "title": "Edad y Conducta",
-"content": "La edad mínima para participar es de 18 años. El comportamiento inapropiado puede llevar a la expulsión del evento sin reembolso o compensación."
-},
-{
-"title": "Acuerdo",
-"content": "Al reservar, confirmas que comprendes y aceptas plenamente estos términos."
+    "section2": {
+      "title": "Reserva y Pago",
+      "content": [
+        "Todas las reservas deben confirmarse con anticipación a través de nuestro sitio web o por contacto directo.",
+        "El pago completo es requerido al momento de la reserva para asegurar su lugar.",
+        "Los precios pueden variar según el paquete, número de participantes y temporada."
+      ]
+    },
+    "section3": {
+      "title": "Política de Cancelación y Reembolso",
+      "content": [
+        "Todos los pagos son finales. No se emitirán reembolsos bajo ninguna circunstancia, incluyendo cancelaciones, eventos perdidos o cambios de planes.",
+        "Recomendamos encarecidamente a los clientes que adquieran un seguro de viaje personal en caso de imprevistos."
+      ]
+    },
+    "section4": {
+      "title": "Cambios o Cancelaciones por Nuestra Parte",
+      "content": [
+        "Si un evento debe ser cancelado o modificado por razones de seguridad, clima o disponibilidad, intentaremos proporcionar una actividad de reemplazo adecuada.",
+        "No se otorgarán reembolsos monetarios. Las sustituciones se ofrecen a nuestra discreción."
+      ]
+    },
+    "section5": {
+      "title": "Responsabilidad",
+      "content": [
+        "La participación en todos los eventos es bajo su propio riesgo.",
+        "No nos hacemos responsables por lesiones, daños a la propiedad o pérdidas.",
+        "Se espera que todos los invitados se comporten de manera respetuosa y responsable."
+      ]
+    },
+    "section6": {
+      "title": "Edad y Conducta",
+      "content": [
+        "La edad mínima para participar es de 18 años.",
+        "El comportamiento inapropiado puede llevar a la expulsión del evento sin reembolso ni compensación."
+      ]
+    },
+    "section7": {
+      "title": "Acuerdo",
+      "content": [
+        "Al reservar, usted confirma que entiende y acepta estos términos completamente."
+      ]
+    },
+    "ctaTitle": "¿Listo para una experiencia inolvidable?",
+    "ctaDescription": "Ahora que conoce nuestros términos, ¡empecemos a planificar su experiencia de despedida de soltera soñada en Malta!",
+    "ctaButton": "Volver a la Reserva"
+  },
+
+
+
+  "footer": {
+    "about_us": "Sobre nosotros",
+    "what_we_offer": "Lo que ofrecemos",
+    "booking": "Reservas",
+    "contact": "Contacto",
+    "privacy_policy": "Política de privacidad",
+    "terms_conditions": "Términos y condiciones",
+    "description": "Creamos experiencias inolvidables de despedidas de soltera en el corazón del Mediterráneo. Déjanos hacer tu celebración extraordinaria.",
+    "quick_links": "Enlaces rápidos",
+    "subscribe": "Suscribirse",
+    "newsletter_text": "Únete a nuestro boletín para recibir ofertas exclusivas y actualizaciones.",
+    "email_placeholder": "Tu dirección de correo electrónico",
+    "subscribe_button": "Suscribirse",
+    "rights_reserved": "Todos los derechos reservados."
+  },
+
+  "sections": {
+    "booking": {
+      "title": "Reserva tu experiencia de despedida de soltera",
+      "subtitle": "Rellena el formulario a continuación y prepárate para una celebración inolvidable"
+    }
+  },
+  "form": {
+    "date": "Fecha preferida",
+    "country": "Tu país",
+    "country_placeholder": "¿Desde dónde viajas?",
+    "duration": "Duración del viaje",
+    "select_duration": "-- Seleccionar duración --",
+    "days": "Días",
+    "custom": "Personalizado (especificar en notas)",
+    "package": "Paquete de experiencia",
+    "select_package": "-- Seleccionar paquete --",
+    "booking_type": "Tipo de reserva",
+    "binding": "Reserva vinculante",
+    "non_binding": "Consulta sin compromiso"
+  },
+  "packages": {
+    "luxury": {
+      "title": "Escapada de lujo"
+    },
+    "adventure": {
+      "title": "Aventura y diversión"
+    },
+    "budget": {
+      "title": "Económico"
+    },
+    "custom": {
+      "title": "Experiencia personalizada"
+    }
+  },
+  "buttons": {
+    "cancel": "Cancelar",
+    "submit": "Reservar ahora",
+    "submitting": "Procesando..."
+  }
 }
-]
-}
-}
+
+

@@ -1,21 +1,18 @@
-'use client';
-
+import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
-import React, { useState } from 'react';
 import Button from '../ui/Button';
-import { useTranslation } from '@/app/utils/translate';
+// import { useTranslation } from '@/app/utils/translate'; // your i18n hook
 import BookingModal from '../BookingModal';
+import { useTranslation } from 'react-i18next';
 
 export default function HeroSection() {
   const { t } = useTranslation();
   const [isModalOpen, setIsModalOpen] = useState(false);
 
-  const title = t('Bachelor&Bacholorette parties in Malta', 'Bachelorette Malta');
-  const motto = t(
-    'Before you say ‘I do’ – you say ‘cheers’ in Malta',
-    '"Before you say \'I do\' – you say \'cheers\' in Malta."'
-  );
+  // Use translation keys, no fallback text here
+  const title = t('hero.title');
+  const motto = t('hero.motto');
 
   const openModal = () => setIsModalOpen(true);
   const closeModal = () => setIsModalOpen(false);
@@ -23,14 +20,13 @@ export default function HeroSection() {
   return (
     <>
       <section
-        className="relative min-h-screen flex items-center justify-center"
+        className="relative min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8"
         aria-label="Hero section"
       >
-        {/* Background Image */}
         <div className="absolute inset-0 z-0">
           <Image
             src="/images/hero.jpeg"
-            alt="Malta coastline"
+            alt={t('hero.imageAlt', 'Malta coastline')}
             fill
             priority
             className="object-cover"
@@ -38,48 +34,50 @@ export default function HeroSection() {
           <div className="absolute inset-0 bg-gradient-to-b from-black/70 to-black/40" />
         </div>
 
-        {/* Content */}
-        <div className="container mx-auto px-4 z-10 text-center">
+        <div className="relative z-10 text-center max-w-3xl w-full">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
           >
-            <h1 className="text-5xl md:text-6xl font-bold text-white mb-6 font-heading">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 font-heading">
               {title}
             </h1>
-            <p className="text-xl md:text-2xl text-white/90 mb-10 max-w-3xl mx-auto">
+            <p className="text-base sm:text-lg md:text-xl text-white/90 mb-8">
               {motto}
             </p>
-            <Button
-              href="#what-we-offer"
-              color="primary"
-              size="lg"
-              className="mr-4"
-            >
-              {t('Discover Packages', 'Discover Packages')}
-            </Button>
-            <Button
-              type="button"
-              color="secondary"
-              size="lg"
-              variant="outline"
-              onClick={openModal}
-            >
-              {t('Book Now', 'Book Now')}
-            </Button>
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+              <Button
+                href="#what-we-offer"
+                color="primary"
+                size="lg"
+                className="w-full sm:w-auto"
+              >
+                {t('hero.discoverPackages')}
+              </Button>
+              <Button
+                type="button"
+                color="secondary"
+                size="lg"
+                variant="outline"
+                onClick={openModal}
+                className="w-full sm:w-auto"
+              >
+                {t('hero.bookNow')}
+              </Button>
+            </div>
           </motion.div>
         </div>
 
         {/* Scroll indicator */}
         <motion.div
-          className="absolute bottom-10 left-1/2 transform -translate-x-1/2"
+          className="absolute bottom-6 left-1/2 transform -translate-x-1/2 hidden sm:block"
           animate={{ y: [0, 10, 0] }}
           transition={{ repeat: Infinity, duration: 2 }}
           aria-hidden="true"
         >
           <svg
-            className="w-10 h-10 text-white opacity-70"
+            className="w-6 h-6 md:w-8 md:h-8 text-white opacity-70"
             fill="none"
             strokeLinecap="round"
             strokeLinejoin="round"
@@ -92,7 +90,6 @@ export default function HeroSection() {
         </motion.div>
       </section>
 
-      {/* Booking Modal */}
       <BookingModal isOpen={isModalOpen} onClose={closeModal} />
     </>
   );

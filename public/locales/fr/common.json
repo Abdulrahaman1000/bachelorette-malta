@@ -1,25 +1,54 @@
 {
-    "navigation": {
-      "whatWeOffer": "Nos Offres",
-      "booking": "Réservation",
-      "contact": "Contact"
+    "header": {
+       "whatWeOffer": "Ce que nous offrons",
+    "booking": "Réservation",
+    "contact": "Contact",
+    "toggleMenu": "Basculer le menu"
     },
     "hero": {
-      "title": "Bachelorette Malta",
-      "motto": "Avant de dire 'oui' – vous trinquez à Malte."
+       "title": "Enterrement de vie de jeune fille à Malte",
+      "motto": "Avant de dire 'oui', dites 'santé' à Malte.",
+      "discoverPackages": "Découvrir les forfaits",
+      "bookNow": "Réserver maintenant",
+      "imageAlt": "Côte de Malte"
     },
-    "about": {
-      "title": "À Propos",
-      "motto": "Parce que chaque histoire mérite un début inoubliable.",
-      "text": [
-        "Bienvenue dans le monde des Bachelor & Bachelorette Parties Malta, où les jours ordinaires se transforment en souvenirs légendaires.",
-        "Nous sommes spécialisés dans l'organisation d'enterrements de vie de jeune fille et de garçon qui vont au-delà de l'ordinaire – des moments remplis d'émotion, d'aventure, de rires et d'élégance.",
-        "Notre mission est de créer une expérience sur mesure pour chaque groupe – que vous rêviez d'une escapade en yacht de luxe, d'un week-end d'adrénaline riche en action, ou simplement de temps de qualité avec des amis dans les environs magnifiques de Malte.",
-        "Nous travaillons exclusivement avec des partenaires de confiance et proposons des hébergements dans des fermes privées élégantes. De la prise en charge à l'aéroport jusqu'au dernier toast, nous nous occupons de chaque détail.",
-        "Nous croyons qu'un enterrement de vie de jeune fille doit être unique, sans stress et parfaitement planifié.",
-        "Et c'est exactement ce que nous offrons."
-      ]
-    },
+ 
+  "about": {
+    "title": "À propos de nous",
+    "motto": "Parce que chaque histoire mérite un début inoubliable.",
+    "text": [
+      "Bienvenue dans le monde de Bachelor & Bachelorette Parties Malta, où les journées ordinaires deviennent des souvenirs légendaires.",
+      "Nous sommes spécialisés dans l'organisation d'enterrements de vie de célibataire qui vont au-delà de l'ordinaire – des moments remplis d'émotion, d'aventure, de rires et de style.",
+      "Notre mission est de créer une expérience sur mesure pour chaque groupe – que vous rêviez d'une escapade en yacht de luxe, d'un week-end riche en adrénaline ou simplement de bons moments entre amis dans les magnifiques paysages de Malte.",
+      "Nous travaillons exclusivement avec des partenaires de confiance et proposons des hébergements dans des fermes privées élégantes. De la prise en charge à l'aéroport au dernier toast, nous nous occupons de tout.",
+      "Nous croyons qu’un enterrement de vie de jeune fille doit être unique, sans stress et parfaitement organisé.",
+      "Et c’est exactement ce que nous offrons."
+    ],
+    "coreFeaturesTitle": "Nos atouts clés",
+    "features": [
+      {
+        "title": "Planification experte",
+        "description": "Des itinéraires personnalisés adaptés à votre groupe",
+        "icon": "fa-calendar"
+      },
+      {
+        "title": "Expertise locale",
+        "description": "Accès exclusif à Malte.",
+        "icon": "fa-map-marker-alt"
+      },
+      {
+        "title": "Taille des groupes",
+        "description": "Parfait pour tous les groupes, des petits comités aux grandes fêtes.",
+        "icon": "fa-users"
+      },
+      {
+        "title": "Assistance complète",
+        "description": "Assistance 24/7 pendant tout votre séjour pour garantir une expérience fluide.",
+        "icon": "fa-hands-helping"
+      }
+    ]
+  },
+
     "whatWeOffer": {
       "title": "Nos Offres",
       "packages": {
@@ -79,44 +108,141 @@
         "submit": "Soumettre"
       }
     },
-    "contact": {
-      "title": "Contact",
-      "email": "bachelorettemalta@gmail.com",
-      "facebook": "facebook.com/bachelorettemalta",
-      "instagram": "@bachelorettemalta",
-      "phone": "+356 77381284"
-    },
-    "terms": {
-      "title": "Conditions Générales",
-      "sections": [
-        {
-          "title": "Introduction",
-          "content": "En réservant ou en utilisant nos services, vous acceptez ces conditions générales établies par \"Bachelor/Bachelorette Parties Malta\"."
-        },
-        {
-          "title": "Réservation & Paiement",
-          "content": "Toutes les réservations doivent être confirmées à l'avance via notre site Web ou par contact direct. Le paiement intégral est requis au moment de la réservation pour garantir votre réservation. Les prix peuvent varier en fonction du forfait, du nombre de participants et de la saison."
-        },
-        {
-          "title": "Politique d'annulation & de remboursement",
-          "content": "Tous les paiements sont définitifs. Aucun remboursement ne sera émis en aucune circonstance, y compris les annulations, les événements manqués ou les changements de plans. Nous recommandons vivement à nos clients de souscrire une assurance voyage personnelle en cas de problèmes inattendus."
-        },
-        {
-          "title": "Modifications ou annulations par nous",
-          "content": "Si un événement doit être annulé ou modifié en raison de problèmes de sécurité, de météo ou de disponibilité, nous tenterons de fournir une activité de remplacement appropriée. Aucun remboursement monétaire ne sera effectué. Les remplacements sont offerts à notre discrétion."
-        },
-        {
-          "title": "Responsabilité",
-          "content": "La participation à tous les événements est à vos propres risques. Nous ne sommes pas responsables des blessures, des dommages matériels ou des pertes. Tous les invités sont censés se comporter de manière respectueuse et responsable."
-        },
-        {
-          "title": "Âge & Conduite",
-          "content": "L'âge minimum pour participer est de 18 ans. Un comportement inapproprié peut entraîner l'exclusion de l'événement sans remboursement ni compensation."
-        },
-        {
-          "title": "Accord",
-          "content": "En réservant, vous confirmez que vous comprenez et acceptez pleinement ces conditions."
-        }
-      ]
+ 
+  "Contact": {
+    "title": "Contactez-nous",
+    "description": "Contactez-nous et organisez l’enterrement de vie de célibataire parfait à Malte !",
+    "imageAlt": "Enterrement de vie de célibataire à Malte",
+    "emailLabel": "Email",
+    "facebookLabel": "Facebook",
+    "instagramLabel": "Instagram",
+    "formTitle": "Envoyez-nous un message",
+    "form": {
+      "name": "Votre nom",
+      "email": "Votre email",
+      "message": "Votre message",
+      "submit": "Envoyer le message"
     }
+  },
+
+
+   
+  "terms": {
+    "title": "Termes et Conditions",
+    "subtitle": "Veuillez lire attentivement ces conditions avant de réserver votre expérience inoubliable à Malte",
+    "heroImageAlt": "Littoral de Malte",
+    "intro": "Chez Bachelor/Bachelorette Parties Malta, nous nous efforçons d'offrir des expériences exceptionnelles pour votre célébration. Afin d'assurer une compréhension claire et mutuelle, nous avons défini nos termes et conditions ci-dessous.",
+    "section1": {
+      "title": "Introduction",
+      "content": [
+        "En réservant ou en utilisant nos services, vous acceptez les présents termes et conditions établis par « Bachelor/Bachelorette Parties Malta »."
+      ]
+    },
+    "section2": {
+      "title": "Réservation et Paiement",
+      "content": [
+        "Toutes les réservations doivent être confirmées à l'avance via notre site web ou par contact direct.",
+        "Le paiement complet est requis au moment de la réservation pour garantir votre place.",
+        "Les tarifs peuvent varier en fonction du forfait, du nombre de participants et de la saison."
+      ]
+    },
+    "section3": {
+      "title": "Politique d’Annulation et de Remboursement",
+      "content": [
+        "Tous les paiements sont définitifs. Aucun remboursement ne sera effectué, quelles que soient les circonstances, y compris les annulations, les événements manqués ou les changements de programme.",
+        "Nous recommandons fortement aux clients de souscrire une assurance voyage personnelle en cas d'imprévus."
+      ]
+    },
+    "section4": {
+      "title": "Modifications ou Annulations de Notre Part",
+      "content": [
+        "Si un événement doit être annulé ou modifié pour des raisons de sécurité, de météo ou de disponibilité, nous nous efforcerons de proposer une activité de remplacement appropriée.",
+        "Aucun remboursement monétaire ne sera effectué. Les remplacements sont proposés à notre discrétion."
+      ]
+    },
+    "section5": {
+      "title": "Responsabilité",
+      "content": [
+        "La participation à tous les événements se fait à vos propres risques.",
+        "Nous ne sommes pas responsables des blessures, des dommages matériels ou des pertes.",
+        "Tous les invités sont tenus d'adopter un comportement respectueux et responsable."
+      ]
+    },
+    "section6": {
+      "title": "Âge et Conduite",
+      "content": [
+        "L'âge minimum requis pour participer est de 18 ans.",
+        "Un comportement inapproprié peut entraîner une exclusion de l'événement sans remboursement ni compensation."
+      ]
+    },
+    "section7": {
+      "title": "Acceptation",
+      "content": [
+        "En réservant, vous confirmez que vous comprenez et acceptez pleinement ces conditions."
+      ]
+    },
+    "ctaTitle": "Prêt(e) pour une expérience inoubliable ?",
+    "ctaDescription": "Maintenant que vous connaissez nos conditions, commençons à planifier votre enterrement de vie de jeune fille de rêve à Malte !",
+    "ctaButton": "Retour à la réservation"
+  },
+
+
+    
+  "footer": {
+    "about_us": "À propos de nous",
+    "what_we_offer": "Ce que nous offrons",
+    "booking": "Réservation",
+    "contact": "Contact",
+    "privacy_policy": "Politique de confidentialité",
+    "terms_conditions": "Conditions générales",
+    "description": "Créer des expériences inoubliables de enterrement de vie de jeune fille au cœur de la Méditerranée. Laissez-nous rendre votre célébration extraordinaire.",
+    "quick_links": "Liens rapides",
+    "subscribe": "S'abonner",
+    "newsletter_text": "Rejoignez notre newsletter pour des offres exclusives et des mises à jour.",
+    "email_placeholder": "Votre adresse e-mail",
+    "subscribe_button": "S'abonner",
+    "rights_reserved": "Tous droits réservés."
+  },
+
+
+  
+  "sections": {
+    "booking": {
+      "title": "Réservez votre expérience d'enterrement de vie de jeune fille",
+      "subtitle": "Remplissez le formulaire ci-dessous et préparez-vous pour une célébration inoubliable"
+    }
+  },
+  "form": {
+    "date": "Date préférée",
+    "country": "Votre pays",
+    "country_placeholder": "D'où voyagez-vous ?",
+    "duration": "Durée du voyage",
+    "select_duration": "-- Sélectionnez la durée --",
+    "days": "Jours",
+    "custom": "Personnalisé (spécifiez dans les notes)",
+    "package": "Forfait d'expérience",
+    "select_package": "-- Sélectionnez le forfait --",
+    "booking_type": "Type de réservation",
+    "binding": "Réservation ferme",
+    "non_binding": "Demande sans engagement"
+  },
+  "packages": {
+    "luxury": {
+      "title": "Évasion de luxe"
+    },
+    "adventure": {
+      "title": "Aventure & Plaisir"
+    },
+    "budget": {
+      "title": "Économique"
+    },
+    "custom": {
+      "title": "Expérience personnalisée"
+    }
+  },
+  "buttons": {
+    "cancel": "Annuler",
+    "submit": "Réserver maintenant",
+    "submitting": "Traitement en cours..."
   }
+}

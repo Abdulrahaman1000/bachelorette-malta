@@ -1,25 +1,55 @@
 {
-    "navigation": {
-      "whatWeOffer": "Unser Angebot",
-      "booking": "Buchung",
-      "contact": "Kontakt"
+    "header": {
+      "whatWeOffer": "Was wir anbieten",
+    "booking": "Buchung",
+    "contact": "Kontakt",
+    "toggleMenu": "Menü umschalten"
     },
     "hero": {
-      "title": "Bachelorette Malta",
-      "motto": "Bevor du „Ja sagst – stoßt ihr in Malta an."
+      "title": "Junggesellinnenabschied auf Malta",
+      "motto": "Bevor du 'Ja' sagst, sag 'Prost' auf Malta.",
+      "discoverPackages": "Pakete entdecken",
+      "bookNow": "Jetzt buchen",
+      "imageAlt": "Küste von Malta"
     },
-    "about": {
-      "title": "Über Uns",
-      "motto": "Weil jede Geschichte einen unvergesslichen Anfang verdient.",
-      "text": [
-        "Willkommen in der Welt der Bachelor & Bachelorette Parties Malta, wo gewöhnliche Tage zu legendären Erinnerungen werden.",
-        "Wir haben uns auf die Planung von Junggesellen- und Junggesellinnenabschieden spezialisiert, die über das Übliche hinausgehen – Momente voller Emotionen, Abenteuer, Lachen und Eleganz.",
-        "Unsere Mission ist es, für jede Gruppe ein maßgeschneidertes Erlebnis zu schaffen – ob Sie von einer Luxusyacht-Flucht träumen, einem actionreichen Adrenalin-Wochenende oder einfach nur Qualitätszeit mit Freunden in der atemberaubenden Umgebung Maltas.",
-        "Wir arbeiten ausschließlich mit vertrauenswürdigen Partnern zusammen und bieten Unterkünfte in stilvollen privaten Landhäusern. Von der Abholung am Flughafen bis zum letzten Toast kümmern wir uns um jedes Detail.",
-        "Wir glauben, dass ein Junggesellinnenabschied einzigartig, stressfrei und tadellos geplant sein sollte.",
-        "Und genau das liefern wir."
-      ]
-    },
+    
+  "about": {
+    "title": "Über uns",
+    "motto": "Denn jede Geschichte verdient einen unvergesslichen Anfang.",
+    "text": [
+      "Willkommen bei Bachelor & Bachelorette Parties Malta, wo gewöhnliche Tage zu legendären Erinnerungen werden.",
+      "Wir sind spezialisiert auf die Planung von Junggesellen- und Junggesellinnenabschieden, die über das Übliche hinausgehen – voller Emotionen, Abenteuer, Lachen und Stil.",
+      "Unsere Mission ist es, für jede Gruppe ein maßgeschneidertes Erlebnis zu schaffen – ob luxuriöser Yachtausflug, actionreiches Wochenende oder einfach entspannte Zeit mit Freunden in Maltas atemberaubender Umgebung.",
+      "Wir arbeiten ausschließlich mit vertrauenswürdigen Partnern zusammen und bieten stilvolle Unterkünfte in privaten Bauernhäusern. Vom Flughafentransfer bis zum letzten Toast kümmern wir uns um jedes Detail.",
+      "Wir glauben, dass ein Junggesellenabschied einzigartig, stressfrei und perfekt organisiert sein sollte.",
+      "Und genau das bieten wir."
+    ],
+    "coreFeaturesTitle": "Unsere Kernmerkmale",
+    "features": [
+      {
+        "title": "Expertenplanung",
+        "description": "Personalisierte Reisepläne für Ihre Gruppe",
+        "icon": "fa-calendar"
+      },
+      {
+        "title": "Lokales Fachwissen",
+        "description": "Exklusiver Zugang zu Malta.",
+        "icon": "fa-map-marker-alt"
+      },
+      {
+        "title": "Gruppengrößen",
+        "description": "Ideal für kleine Gruppen bis hin zu großen Feiern.",
+        "icon": "fa-users"
+      },
+      {
+        "title": "Vollständiger Support",
+        "description": "Rund-um-die-Uhr-Unterstützung während Ihres Aufenthalts.",
+        "icon": "fa-hands-helping"
+      }
+    ]
+  },
+
+
     "whatWeOffer": {
       "title": "Unser Angebot",
       "packages": {
@@ -79,44 +109,140 @@
         "submit": "Absenden"
       }
     },
-    "contact": {
-      "title": "Kontakt",
-      "email": "bachelorettemalta@gmail.com",
-      "facebook": "facebook.com/bachelorettemalta",
-      "instagram": "@bachelorettemalta",
-      "phone": "+356 77381284"
-    },
-    "terms": {
-      "title": "Allgemeine Geschäftsbedingungen",
-      "sections": [
-        {
-          "title": "Einleitung",
-          "content": "Mit der Buchung oder Nutzung unserer Dienstleistungen stimmen Sie diesen Geschäftsbedingungen von \"Bachelor/Bachelorette Parties Malta\" zu."
-        },
-        {
-          "title": "Buchung & Zahlung",
-          "content": "Alle Buchungen müssen im Voraus über unsere Website oder durch direkten Kontakt bestätigt werden. Die vollständige Zahlung ist zum Zeitpunkt der Buchung erforderlich, um Ihre Reservierung zu sichern. Die Preise können je nach Paket, Teilnehmerzahl und Saison variieren."
-        },
-        {
-          "title": "Stornierung & Rückerstattung",
-          "content": "Alle Zahlungen sind endgültig. Unter keinen Umständen werden Rückerstattungen gewährt, einschließlich Stornierungen, verpasster Veranstaltungen oder Planänderungen. Wir empfehlen unseren Kunden dringend, eine persönliche Reiseversicherung für unerwartete Probleme abzuschließen."
-        },
-        {
-          "title": "Änderungen oder Stornierungen durch uns",
-          "content": "Wenn eine Veranstaltung aus Sicherheitsgründen, wegen des Wetters oder der Verfügbarkeit abgesagt oder geändert werden muss, werden wir versuchen, eine geeignete Ersatzaktivität anzubieten. Es werden keine Gelderstattungen gewährt. Ersatzleistungen werden nach unserem Ermessen angeboten."
-        },
-        {
-          "title": "Verantwortung & Haftung",
-          "content": "Die Teilnahme an allen Veranstaltungen erfolgt auf eigene Gefahr. Wir haften nicht für Verletzungen, Sachschäden oder Verluste. Von allen Gästen wird erwartet, dass sie sich respektvoll und verantwortungsbewusst verhalten."
-        },
-        {
-          "title": "Alter & Verhalten",
-          "content": "Das Mindestalter für die Teilnahme beträgt 18 Jahre. Unangemessenes Verhalten kann zum Ausschluss von der Veranstaltung führen, ohne Rückerstattung oder Entschädigung."
-        },
-        {
-          "title": "Vereinbarung",
-          "content": "Mit der Buchung bestätigen Sie, dass Sie diese Bedingungen vollständig verstehen und akzeptieren."
-        }
-      ]
+  
+
+  "Contact": {
+    "title": "Kontaktieren Sie uns",
+    "description": "Kontaktieren Sie uns, um Ihren perfekten Junggesellinnenabschied in Malta zu planen!",
+    "imageAlt": "Junggesellinnenabschied auf Malta",
+    "emailLabel": "E-Mail",
+    "facebookLabel": "Facebook",
+    "instagramLabel": "Instagram",
+    "formTitle": "Senden Sie uns eine Nachricht",
+    "form": {
+      "name": "Ihr Name",
+      "email": "Ihre E-Mail",
+      "message": "Ihre Nachricht",
+      "submit": "Nachricht senden"
     }
+  },
+
+
+  "terms": {
+    "title": "Allgemeine Geschäftsbedingungen",
+    "subtitle": "Bitte lesen Sie diese Bedingungen sorgfältig durch, bevor Sie Ihre unvergessliche Malta-Erfahrung buchen",
+    "heroImageAlt": "Küste von Malta",
+    "intro": "Bei Bachelor/Bachelorette Parties Malta streben wir danach, außergewöhnliche Erlebnisse für Ihre Feier zu bieten. Um Klarheit und gegenseitiges Verständnis zu gewährleisten, haben wir unsere Allgemeinen Geschäftsbedingungen unten aufgeführt.",
+    "section1": {
+      "title": "Einleitung",
+      "content": [
+        "Durch die Buchung oder Nutzung unserer Dienstleistungen stimmen Sie diesen Allgemeinen Geschäftsbedingungen von \"Bachelor/Bachelorette Parties Malta\" zu."
+      ]
+    },
+    "section2": {
+      "title": "Buchung & Zahlung",
+      "content": [
+        "Alle Buchungen müssen im Voraus über unsere Website oder durch direkten Kontakt bestätigt werden.",
+        "Die vollständige Zahlung ist zum Zeitpunkt der Buchung erforderlich, um Ihre Reservierung zu sichern.",
+        "Die Preise können je nach Paket, Anzahl der Teilnehmer und Saison variieren."
+      ]
+    },
+    "section3": {
+      "title": "Stornierungs- & Rückerstattungsrichtlinie",
+      "content": [
+        "Alle Zahlungen sind endgültig. Es werden unter keinen Umständen Rückerstattungen gewährt, einschließlich Stornierungen, verpasster Veranstaltungen oder Planänderungen.",
+        "Wir empfehlen dringend, eine persönliche Reiseversicherung für unvorhergesehene Probleme abzuschließen."
+      ]
+    },
+    "section4": {
+      "title": "Änderungen oder Stornierungen durch uns",
+      "content": [
+        "Wenn eine Veranstaltung aus Sicherheitsgründen, Wetterbedingungen oder Verfügbarkeit abgesagt oder geändert werden muss, werden wir versuchen, eine geeignete Ersatzaktivität bereitzustellen.",
+        "Es werden keine Geldrückerstattungen gewährt. Ersatzleistungen erfolgen nach unserem Ermessen."
+      ]
+    },
+    "section5": {
+      "title": "Verantwortung & Haftung",
+      "content": [
+        "Die Teilnahme an allen Veranstaltungen erfolgt auf eigenes Risiko.",
+        "Wir haften nicht für Verletzungen, Sachschäden oder Verluste.",
+        "Alle Gäste werden erwartet, sich respektvoll und verantwortungsbewusst zu verhalten."
+      ]
+    },
+    "section6": {
+      "title": "Alter & Verhalten",
+      "content": [
+        "Das Mindestalter für die Teilnahme beträgt 18 Jahre.",
+        "Unangemessenes Verhalten kann zum Ausschluss von der Veranstaltung ohne Rückerstattung oder Entschädigung führen."
+      ]
+    },
+    "section7": {
+      "title": "Vereinbarung",
+      "content": [
+        "Durch die Buchung bestätigen Sie, dass Sie diese Bedingungen vollständig verstanden und akzeptiert haben."
+      ]
+    },
+    "ctaTitle": "Bereit für ein unvergessliches Erlebnis?",
+    "ctaDescription": "Jetzt, da Sie mit unseren Bedingungen vertraut sind, lassen Sie uns Ihre Traum-Junggesellinnenfeier in Malta planen!",
+    "ctaButton": "Zurück zur Buchung"
+  },
+
+
+  
+    
+  "footer": {
+    "about_us": "Über uns",
+    "what_we_offer": "Was wir anbieten",
+    "booking": "Buchung",
+    "contact": "Kontakt",
+    "privacy_policy": "Datenschutzrichtlinie",
+    "terms_conditions": "Allgemeine Geschäftsbedingungen",
+    "description": "Unvergessliche Junggesellinnenabschiede im Herzen des Mittelmeers. Lassen Sie uns Ihre Feier außergewöhnlich machen.",
+    "quick_links": "Schnellzugriff",
+    "subscribe": "Abonnieren",
+    "newsletter_text": "Abonnieren Sie unseren Newsletter für exklusive Angebote und Neuigkeiten.",
+    "email_placeholder": "Ihre E-Mail-Adresse",
+    "subscribe_button": "Abonnieren",
+    "rights_reserved": "Alle Rechte vorbehalten."
+  },
+
+  "sections": {
+    "booking": {
+      "title": "Buche dein Junggesellinnenabschied-Erlebnis",
+      "subtitle": "Fülle das Formular unten aus und bereite dich auf eine unvergessliche Feier vor"
+    }
+  },
+  "form": {
+    "date": "Bevorzugtes Datum",
+    "country": "Dein Land",
+    "country_placeholder": "Aus welchem Land reist du an?",
+    "duration": "Reisedauer",
+    "select_duration": "-- Dauer auswählen --",
+    "days": "Tage",
+    "custom": "Individuell (in den Notizen angeben)",
+    "package": "Erlebnispaket",
+    "select_package": "-- Paket auswählen --",
+    "booking_type": "Buchungsart",
+    "binding": "Verbindliche Reservierung",
+    "non_binding": "Unverbindliche Anfrage"
+  },
+  "packages": {
+    "luxury": {
+      "title": "Luxusurlaub"
+    },
+    "adventure": {
+      "title": "Abenteuer & Spaß"
+    },
+    "budget": {
+      "title": "Preiswert"
+    },
+    "custom": {
+      "title": "Individuelles Erlebnis"
+    }
+  },
+  "buttons": {
+    "cancel": "Abbrechen",
+    "submit": "Jetzt buchen",
+    "submitting": "Verarbeite..."
+  }
 }

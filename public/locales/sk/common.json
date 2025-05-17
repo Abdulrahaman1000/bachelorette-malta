@@ -1,12 +1,16 @@
  {
-"navigation": {
-"whatWeOffer": "Naša Ponuka",
-"booking": "Rezervácia",
-"contact": "Kontakt"
+"header": {
+ "whatWeOffer": "Čo ponúkame",
+    "booking": "Rezervácia",
+    "contact": "Kontakt",
+    "toggleMenu": "Prepnúť menu"
 },
 "hero": {
-"title": "Bachelorette Malta",
-"motto": "Pred tým, než poviete 'áno' – pripite si na Malte."
+  "title": "Junggesellinnenabschied auf Malta",
+      "motto": "Bevor du 'Ja' sagst, sag 'Prost' auf Malta.",
+      "discoverPackages": "Pakete entdecken",
+      "bookNow": "Jetzt buchen",
+      "imageAlt": "Küste von Malta"
 },
 "about": {
 "title": "O Nás",
@@ -79,44 +83,140 @@
 "submit": "Odoslať"
 }
 },
-"contact": {
-"title": "Kontakt",
-"email": "bachelorettemalta@gmail.com",
-"facebook": "facebook.com/bachelorettemalta",
-"instagram": "@bachelorettemalta",
-"phone": "+356 77381284"
-},
-"terms": {
-"title": "Obchodné Podmienky",
-"sections": [
-{
-"title": "Úvod",
-"content": "Rezerváciou alebo používaním našich služieb súhlasíte s týmito podmienkami stanovenými spoločnosťou \"Bachelor/Bachelorette Parties Malta\"."
-},
-{
-"title": "Rezervácia a Platba",
-"content": "Všetky rezervácie musia byť potvrdené vopred prostredníctvom našej webovej stránky alebo priamym kontaktom. Na zabezpečenie vašej rezervácie sa vyžaduje plná platba v čase rezervácie. Ceny sa môžu líšiť v závislosti od balíka, počtu účastníkov a sezóny."
-},
-{
-"title": "Politika Zrušenia a Vrátenia Peňazí",
-"content": "Všetky platby sú konečné. Za žiadnych okolností nebudú vydané žiadne refundácie, vrátane zrušení, zmeškaných podujatí alebo zmien plánov. Dôrazne odporúčame klientom, aby si zakúpili osobné cestovné poistenie pre prípad neočakávaných problémov."
-},
-{
-"title": "Zmeny alebo Zrušenia z Našej Strany",
-"content": "Ak musí byť podujatie zrušené alebo upravené z dôvodu bezpečnostných obáv, počasia alebo dostupnosti, pokúsime sa poskytnúť vhodnú náhradnú aktivitu. Peňažné refundácie nebudú poskytnuté. Náhrady sú ponúkané podľa nášho uváženia."
-},
-{
-"title": "Zodpovednosť",
-"content": "Účasť na všetkých podujatiach je na vlastné riziko. Nenesieme zodpovednosť za zranenia, škody na majetku alebo straty. Od všetkých hostí sa očakáva rešpektujúce a zodpovedné správanie."
-},
-{
-"title": "Vek a Správanie",
-"content": "Minimálny vek pre účasť je 18 rokov. Nevhodné správanie môže viesť k vylúčeniu z podujatia bez refundácie alebo kompenzácie."
-},
-{
-"title": "Dohoda",
-"content": "Rezerváciou potvrdzujete, že plne rozumiete a prijímate tieto podmienky."
+
+  "Contact": {
+    "title": "Kontaktujte nás",
+    "description": "Spojte sa s nami a naplánujte si dokonalú rozlúčku so slobodou na Malte!",
+    "imageAlt": "Rozlúčka so slobodou na Malte",
+    "emailLabel": "Email",
+    "facebookLabel": "Facebook",
+    "instagramLabel": "Instagram",
+    "formTitle": "Pošlite nám správu",
+    "form": {
+      "name": "Vaše meno",
+      "email": "Váš email",
+      "message": "Vaša správa",
+      "submit": "Odoslať správu"
+    }
+  },
+
+
+  "terms": {
+    "title": "Podmienky a pravidlá",
+    "subtitle": "Pred rezerváciou svojho nezabudnuteľného zážitku na Malte si prosím pozorne prečítajte tieto podmienky.",
+    "heroImageAlt": "Pobrežie Malty",
+    "intro": "V Bachelor/Bachelorette Parties Malta sa snažíme poskytovať výnimočné zážitky pre vašu oslavu. Aby sme zabezpečili jasnosť a vzájomné porozumenie, uvádzame naše podmienky a pravidlá nižšie.",
+    "section1": {
+      "title": "Úvod",
+      "content": [
+        "Rezerváciou alebo využitím našich služieb súhlasíte s týmito podmienkami stanovenými spoločnosťou \"Bachelor/Bachelorette Parties Malta\"."
+      ]
+    },
+    "section2": {
+      "title": "Rezervácia & Platba",
+      "content": [
+        "Všetky rezervácie musia byť vopred potvrdené prostredníctvom našej webovej stránky alebo priamym kontaktom.",
+        "Úplná platba je požadovaná pri rezervácii na zabezpečenie vašej rezervácie.",
+        "Ceny sa môžu líšiť v závislosti od balíka, počtu účastníkov a sezóny."
+      ]
+    },
+    "section3": {
+      "title": "Storno & Refundácia",
+      "content": [
+        "Všetky platby sú konečné. Za žiadnych okolností sa neposkytujú refundácie, vrátane zrušení, zmeškaných udalostí alebo zmien plánov.",
+        "Dôrazne odporúčame klientom zakúpiť si osobné cestovné poistenie pre prípad neočakávaných problémov."
+      ]
+    },
+    "section4": {
+      "title": "Zmeny alebo zrušenia z našej strany",
+      "content": [
+        "Ak musí byť udalosť zrušená alebo upravená z dôvodu bezpečnostných obáv, počasia alebo dostupnosti, pokúsime sa poskytnúť vhodnú náhradnú aktivitu.",
+        "Finančné refundácie sa neposkytujú. Náhrady sú ponúkané podľa nášho uváženia."
+      ]
+    },
+    "section5": {
+      "title": "Zodpovednosť & Ručenie",
+      "content": [
+        "Účasť na všetkých udalostiach je na vlastné riziko.",
+        "Nezodpovedáme za zranenia, poškodenie majetku alebo straty.",
+        "Od všetkých hostí sa očakáva, že sa budú správať s rešpektom a zodpovedne."
+      ]
+    },
+    "section6": {
+      "title": "Vek & Správanie",
+      "content": [
+        "Minimálny vek pre účasť je 18 rokov.",
+        "Nevhodné správanie môže viesť k vylúčeniu z udalosti bez náhrady alebo kompenzácie."
+      ]
+    },
+    "section7": {
+      "title": "Dohoda",
+      "content": [
+        "Rezerváciou potvrdzujete, že plne rozumiete a akceptujete tieto podmienky."
+      ]
+    },
+    "ctaTitle": "Pripravení na nezabudnuteľný zážitok?",
+    "ctaDescription": "Teraz, keď poznáte naše podmienky, poďme začať plánovať vašu vysnívanú rozlúčku so slobodou na Malte!",
+    "ctaButton": "Späť na rezerváciu"
+  },
+
+
+
+
+  "footer": {
+    "about_us": "O nás",
+    "what_we_offer": "Čo ponúkame",
+    "booking": "Rezervácia",
+    "contact": "Kontakt",
+    "privacy_policy": "Zásady ochrany osobných údajov",
+    "terms_conditions": "Obchodné podmienky",
+    "description": "Vytvárame nezabudnuteľné zážitky rozlúčky so slobodou v srdci Stredomoria. Nechajte nás urobiť vašu oslavu výnimočnou.",
+    "quick_links": "Rýchle odkazy",
+    "subscribe": "Prihlásiť sa",
+    "newsletter_text": "Prihláste sa na odber noviniek a získajte exkluzívne ponuky a aktualizácie.",
+    "email_placeholder": "Vaša e-mailová adresa",
+    "subscribe_button": "Prihlásiť sa",
+    "rights_reserved": "Všetky práva vyhradené."
+  },
+
+  "sections": {
+    "booking": {
+      "title": "Rezervujte si svoju rozlúčku so slobodou",
+      "subtitle": "Vyplňte formulár nižšie a pripravte sa na nezabudnuteľnú oslavu"
+    }
+  },
+  "form": {
+    "date": "Preferovaný dátum",
+    "country": "Vaša krajina",
+    "country_placeholder": "Z ktorej krajiny cestujete?",
+    "duration": "Dĺžka pobytu",
+    "select_duration": "-- Vyberte dĺžku --",
+    "days": "Dni",
+    "custom": "Vlastné (špecifikujte v poznámkach)",
+    "package": "Balík zážitkov",
+    "select_package": "-- Vyberte balík --",
+    "booking_type": "Typ rezervácie",
+    "binding": "Záväzná rezervácia",
+    "non_binding": "Nezáväzný dopyt"
+  },
+  "packages": {
+    "luxury": {
+      "title": "Luxusný únik"
+    },
+    "adventure": {
+      "title": "Dobrodružstvo a zábava"
+    },
+    "budget": {
+      "title": "Cenovo dostupné"
+    },
+    "custom": {
+      "title": "Vlastný zážitok"
+    }
+  },
+  "buttons": {
+    "cancel": "Zrušiť",
+    "submit": "Rezervovať",
+    "submitting": "Spracováva sa..."
+  }
 }
-]
-}
-}
+

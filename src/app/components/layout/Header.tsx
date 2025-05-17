@@ -2,22 +2,22 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
 import { usePathname } from 'next/navigation';
-
-import React from 'react';
 import LanguageSwitcher from './LanguageSwitcher';
+import { useTranslation } from 'react-i18next';
+// import { useTranslation } from '@/app/utils/translate';
 
 interface HeaderProps {
   locale: string;
 }
 
 export default function Header({ locale }: HeaderProps) {
+  const { t } = useTranslation();
+
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const pathname = usePathname();
 
-  // Handle scroll effect
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
@@ -28,22 +28,28 @@ export default function Header({ locale }: HeaderProps) {
   }, []);
 
   const navItems = [
-    { name: 'What We Offer', href: '#what-we-offer' },
-    { name: 'Booking', href: '#booking' },
-    { name: 'Contact', href: '#contact' },
+    { name: t('header.whatWeOffer', 'What We Offer'), href: `/${locale}/what-we-offer` },
+    { name: t('header.booking', 'Booking'), href: `/${locale}#booking` },
+    { name: t('header.contact', 'Contact'), href: `/${locale}#contact` },
   ];
 
   return (
     <header
       className={`fixed top-0 w-full z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-white/95 shadow-md backdrop-blur-sm' : 'bg-transparent'
+        isScrolled ? 'bg-white/95 shadow-md backdrop-blur-sm' : 'bg-black/60'
       }`}
     >
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <Link href="/" className="flex items-center">
-            <span className="text-2xl font-bold text-primary-600">Bachelorette Malta</span>
+          <Link href={`/${locale}`} className="flex items-center">
+            <span
+              className={`text-2xl font-bold ${
+                isScrolled ? 'text-black' : 'text-white'
+              }`}
+            >
+              {t('hero.title', 'Bachelorette Malta')}
+            </span>
           </Link>
 
           {/* Desktop Navigation */}
@@ -53,25 +59,33 @@ export default function Header({ locale }: HeaderProps) {
                 <Link
                   key={item.name}
                   href={item.href}
-                  className="font-medium hover:text-primary-600 transition duration-200"
+                  className={`font-medium transition duration-200 ${
+                    isScrolled ? 'text-black hover:text-primary-600' : 'text-white hover:text-primary-300'
+                  }`}
                 >
                   {item.name}
                 </Link>
               ))}
             </nav>
-            
-            {/* Language Switcher */}
+
             <LanguageSwitcher currentLocale={locale} />
           </div>
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden text-gray-700 hover:text-primary-600 focus:outline-none"
+            className={`md:hidden ${
+              isScrolled ? 'text-black' : 'text-white'
+            } hover:text-primary-600 focus:outline-none`}
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            aria-label="Toggle menu"
+            aria-label={t('header.toggleMenu', 'Toggle menu')}
           >
             {isMenuOpen ? (
-              <svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg
+                className="h-6 w-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
                 <path
                   strokeLinecap="round"
                   strokeLinejoin="round"
@@ -80,7 +94,12 @@ export default function Header({ locale }: HeaderProps) {
                 />
               </svg>
             ) : (
-              <svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg
+                className="h-6 w-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
                 <path
                   strokeLinecap="round"
                   strokeLinejoin="round"
@@ -94,20 +113,20 @@ export default function Header({ locale }: HeaderProps) {
 
         {/* Mobile Menu */}
         {isMenuOpen && (
-          <div className="md:hidden mt-4 py-4 bg-white rounded-lg shadow-lg">
+          <div className="md:hidden mt-4 py-4 bg-black/90 rounded-lg shadow-lg text-white">
             <nav className="flex flex-col space-y-3">
               {navItems.map((item) => (
                 <Link
                   key={item.name}
                   href={item.href}
-                  className="px-4 py-2 hover:bg-primary-50 hover:text-primary-600"
+                  className="px-4 py-2 hover:bg-white/10"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {item.name}
                 </Link>
               ))}
             </nav>
-            <div className="mt-4 px-4 pt-4 border-t border-gray-100">
+            <div className="mt-4 px-4 pt-4 border-t border-white/20">
               <LanguageSwitcher currentLocale={locale} />
             </div>
           </div>
