@@ -1,18 +1,17 @@
 {
-    "header": {
-      "whatWeOffer": "Was wir anbieten",
+  "header": {
+    "whatWeOffer": "Was wir anbieten",
     "booking": "Buchung",
     "contact": "Kontakt",
     "toggleMenu": "Menü umschalten"
-    },
-    "hero": {
-      "title": "Junggesellinnenabschied auf Malta",
-      "motto": "Bevor du 'Ja' sagst, sag 'Prost' auf Malta.",
-      "discoverPackages": "Pakete entdecken",
-      "bookNow": "Jetzt buchen",
-      "imageAlt": "Küste von Malta"
-    },
-    
+  },
+  "hero": {
+    "title": "Junggesellen- & Junggesellinnenabschied",
+    "motto": "Bevor du 'Ja' sagst, sag 'Prost' auf Malta.",
+    "discoverPackages": "Pakete entdecken",
+    "bookNow": "Jetzt buchen",
+    "imageAlt": "Küste von Malta"
+  },
   "about": {
     "title": "Über uns",
     "motto": "Denn jede Geschichte verdient einen unvergesslichen Anfang.",
@@ -48,69 +47,65 @@
       }
     ]
   },
-
-
-    "whatWeOffer": {
-      "title": "Unser Angebot",
-      "packages": {
-        "luxury": {
-          "title": "Luxus-Paket",
-          "features": [
-            "Limousinenfahrt",
-            "Private Yacht mit Getränken",
-            "Go-Kart-Rennen",
-            "Privates Landhaus mit Pool",
-            "VIP-Nachtleben"
-          ]
-        },
-        "adventure": {
-          "title": "Abenteuer-Paket",
-          "features": [
-            "Jetski",
-            "Paintball",
-            "Kajakfahren oder Paddleboarding",
-            "Quads",
-            "Landhaus mit Grillmöglichkeit"
-          ]
-        },
-        "budget": {
-          "title": "Budget-Paket",
-          "features": [
-            "Laserspiel",
-            "Karaoke oder Bowling",
-            "Ganztägige Inselrundfahrt",
-            "Bootsfahrt",
-            "Gemütliches privates Landhaus"
-          ]
-        }
+ "whatWeOffer": {
+    "title": "What We Offer",
+    "packages": {
+      "luxury": {
+        "title": "Luxury Package",
+        "features": [
+          "Limousine ride",
+          "Private yacht with drinks",
+          "Go-kart racing",
+          "Private farmhouse with pool",
+          "VIP nightlife"
+        ]
+      },
+      "adventure": {
+        "title": "Adventure Package",
+        "features": [
+          "Jet skiing",
+          "Paintball",
+          "Kayaking or paddleboarding",
+          "Quad biking",
+          "Farmhouse with BBQ"
+        ]
+      },
+      "budget": {
+        "title": "Budget Package",
+        "features": [
+          "Laser tag",
+          "Karaoke or bowling",
+          "Full-day island tour",
+          "Boat trip",
+          "Cozy private farmhouse"
+        ]
       }
-    },
-    "booking": {
-      "title": "Buchung",
-      "form": {
-        "date": "Datumsauswahl",
-        "country": "Herkunftsland",
-        "duration": "Dauer",
-        "durationOptions": {
-          "3days": "3 Tage",
-          "4days": "4 Tage"
-        },
-        "package": "Paket",
-        "packageOptions": {
-          "luxury": "Luxus",
-          "adventure": "Abenteuer",
-          "budget": "Budget"
-        },
-        "bookingType": "Buchungsart",
-        "bookingTypeOptions": {
-          "binding": "Verbindliche Buchung",
-          "nonBinding": "Unverbindliche Buchung"
-        },
-        "submit": "Absenden"
-      }
-    },
-  
-
+    }
+  },
+  "booking": {
+    "title": "Buchung",
+    "form": {
+      "date": "Datumsauswahl",
+      "country": "Herkunftsland",
+      "duration": "Dauer",
+      "durationOptions": {
+        "3days": "3 Tage",
+        "4days": "4 Tage"
+      },
+      "package": "Paket",
+      "packageOptions": {
+        "luxury": "Luxus",
+        "adventure": "Abenteuer",
+        "budget": "Budget"
+      },
+      "bookingType": "Buchungsart",
+      "bookingTypeOptions": {
+        "binding": "Verbindliche Buchung",
+        "nonBinding": "Unverbindliche Buchung"
+      },
+      "submit": "Absenden"
+    }
+  },
   "Contact": {
     "title": "Kontaktieren Sie uns",
     "description": "Kontaktieren Sie uns, um Ihren perfekten Junggesellinnenabschied in Malta zu planen!",
@@ -126,8 +121,6 @@
       "submit": "Nachricht senden"
     }
   },
-
-
   "terms": {
     "title": "Allgemeine Geschäftsbedingungen",
     "subtitle": "Bitte lesen Sie diese Bedingungen sorgfältig durch, bevor Sie Ihre unvergessliche Malta-Erfahrung buchen",
@@ -186,10 +179,6 @@
     "ctaDescription": "Jetzt, da Sie mit unseren Bedingungen vertraut sind, lassen Sie uns Ihre Traum-Junggesellinnenfeier in Malta planen!",
     "ctaButton": "Zurück zur Buchung"
   },
-
-
-  
-    
   "footer": {
     "about_us": "Über uns",
     "what_we_offer": "Was wir anbieten",
@@ -205,7 +194,6 @@
     "subscribe_button": "Abonnieren",
     "rights_reserved": "Alle Rechte vorbehalten."
   },
-
   "sections": {
     "booking": {
       "title": "Buche dein Junggesellinnenabschied-Erlebnis",

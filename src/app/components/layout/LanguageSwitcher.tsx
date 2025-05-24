@@ -2,12 +2,14 @@
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import { usePathname, useRouter } from 'next/navigation';
+import { useTranslation } from 'react-i18next';
 import { languages, locales } from 'locale.config';
 
 export default function LanguageSwitcher() {
   const [isOpen, setIsOpen] = useState(false);
   const pathname = usePathname();
   const router = useRouter();
+  const { i18n } = useTranslation();
   
   // Get current locale directly from URL
   const currentLocale = pathname.split('/')[1] || 'en';
@@ -16,9 +18,13 @@ export default function LanguageSwitcher() {
   // Debugging - log locale changes
   useEffect(() => {
     console.log('Current active locale:', currentLocale);
-  }, [currentLocale]);
+    // Sync i18n with current locale if needed
+    if (i18n.language !== currentLocale) {
+      i18n.changeLanguage(currentLocale);
+    }
+  }, [currentLocale, i18n]);
 
-  const handleLanguageChange = (newLocale: string) => {
+  const handleLanguageChange = async (newLocale: string) => {
     if (!locales.includes(newLocale)) {
       console.error(`Invalid locale: ${newLocale}`);
       return;
@@ -32,12 +38,25 @@ export default function LanguageSwitcher() {
     // Set cookie for future visits (1 year expiry)
     document.cookie = `NEXT_LOCALE=${newLocale}; path=/; max-age=31536000; SameSite=Lax`;
     
-    // Force full page reload to ensure translations update
-    window.location.href = `/${newLocale}/${pathWithoutLocale}`;
-    
-    // Alternative: If you must avoid full reload (may cause hydration issues)
-    // router.push(`/${newLocale}/${pathWithoutLocale}`);
-    // setTimeout(() => window.location.reload(), 100);
+    try {
+      // Change i18n language first
+      await i18n.changeLanguage(newLocale);
+      
+      // Navigate to new URL
+      const newUrl = `/${newLocale}/${pathWithoutLocale}`;
+      router.push(newUrl);
+      
+      // Small delay to ensure route change, then refresh if needed
+      setTimeout(() => {
+        if (window.location.pathname !== newUrl) {
+          window.location.href = newUrl;
+        }
+      }, 100);
+    } catch (error) {
+      console.error('Error changing language:', error);
+      // Fallback to full page reload
+      window.location.href = `/${newLocale}/${pathWithoutLocale}`;
+    }
   };
 
   // Close dropdown when clicking outside

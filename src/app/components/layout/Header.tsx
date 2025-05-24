@@ -5,14 +5,13 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import LanguageSwitcher from './LanguageSwitcher';
 import { useTranslation } from 'react-i18next';
-// import { useTranslation } from '@/app/utils/translate';
 
 interface HeaderProps {
   locale: string;
 }
 
 export default function Header({ locale }: HeaderProps) {
-  const { t } = useTranslation();
+  const { t } = useTranslation('common'); // Specify the namespace
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
@@ -27,10 +26,25 @@ export default function Header({ locale }: HeaderProps) {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  // No longer needed since LanguageSwitcher handles this internally
+  // const getCurrentRoute = () => {
+  //   const pathWithoutLocale = pathname.replace(`/${locale}`, '') || '/';
+  //   return pathWithoutLocale;
+  // };
+
   const navItems = [
-    { name: t('header.whatWeOffer', 'What We Offer'), href: `/${locale}/what-we-offer` },
-    { name: t('header.booking', 'Booking'), href: `/${locale}#booking` },
-    { name: t('header.contact', 'Contact'), href: `/${locale}#contact` },
+    { 
+      name: t('header.whatWeOffer'), 
+      href: `/${locale}/what-we-offer` 
+    },
+    { 
+      name: t('header.booking'), 
+      href: `/${locale}/#booking` 
+    },
+    { 
+      name: t('header.contact'), 
+      href: `/${locale}/#contact` 
+    },
   ];
 
   return (
@@ -48,7 +62,7 @@ export default function Header({ locale }: HeaderProps) {
                 isScrolled ? 'text-black' : 'text-white'
               }`}
             >
-              {t('hero.title', 'Bachelorette Malta')}
+              {t('hero.title')}
             </span>
           </Link>
 
@@ -60,7 +74,9 @@ export default function Header({ locale }: HeaderProps) {
                   key={item.name}
                   href={item.href}
                   className={`font-medium transition duration-200 ${
-                    isScrolled ? 'text-black hover:text-primary-600' : 'text-white hover:text-primary-300'
+                    isScrolled 
+                      ? 'text-black hover:text-primary-600' 
+                      : 'text-white hover:text-primary-300'
                   }`}
                 >
                   {item.name}
@@ -68,7 +84,7 @@ export default function Header({ locale }: HeaderProps) {
               ))}
             </nav>
 
-            <LanguageSwitcher currentLocale={locale} />
+            <LanguageSwitcher />
           </div>
 
           {/* Mobile Menu Button */}
@@ -77,7 +93,7 @@ export default function Header({ locale }: HeaderProps) {
               isScrolled ? 'text-black' : 'text-white'
             } hover:text-primary-600 focus:outline-none`}
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            aria-label={t('header.toggleMenu', 'Toggle menu')}
+            aria-label={t('header.toggleMenu')}
           >
             {isMenuOpen ? (
               <svg
@@ -127,7 +143,7 @@ export default function Header({ locale }: HeaderProps) {
               ))}
             </nav>
             <div className="mt-4 px-4 pt-4 border-t border-white/20">
-              <LanguageSwitcher currentLocale={locale} />
+              <LanguageSwitcher />
             </div>
           </div>
         )}

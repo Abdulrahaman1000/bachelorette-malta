@@ -1,9 +1,10 @@
+// File: app/components/sections/PackagesSection.tsx
 'use client';
 
+import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 import React from 'react';
 import Card from '../ui/Card';
-import Image from 'next/image';
 import Button from '../ui/Button';
 
 interface Feature {
@@ -14,51 +15,57 @@ interface Feature {
 interface Package {
   id: string;
   title: string;
-  color: 'primary' | 'secondary' | 'accent'; // You can expand this if needed
+  color: 'primary' | 'secondary' | 'accent';
   features: Feature[];
   images: string[];
 }
 
 export default function PackagesSection() {
+  const { t } = useTranslation('common');
+  
+  // Debug: Log translations to see if they're working
+  console.log('Luxury title:', t('whatWeOffer.packages.luxury.title'));
+  console.log('First luxury feature:', t('whatWeOffer.packages.luxury.features.0'));
+
   const packages: Package[] = [
     {
       id: 'luxury',
-      title: 'Luxury Package',
+      title: t('whatWeOffer.packages.luxury.title'),
       color: 'primary',
       features: [
-        { icon: 'car-side', label: 'Limousine ride' },
-        { icon: 'ship', label: 'Private yacht with drinks' },
-        { icon: 'flag-checkered', label: 'Go-kart racing' },
-        { icon: 'home', label: 'Private farmhouse with pool' },
-        { icon: 'glass-cheers', label: 'VIP nightlife' },
+        { icon: 'car-side', label: t('whatWeOffer.packages.luxury.features.0') },
+        { icon: 'ship', label: t('whatWeOffer.packages.luxury.features.1') },
+        { icon: 'flag-checkered', label: t('whatWeOffer.packages.luxury.features.2') },
+        { icon: 'home', label: t('whatWeOffer.packages.luxury.features.3') },
+        { icon: 'glass-cheers', label: t('whatWeOffer.packages.luxury.features.4') },
       ],
-      images: ['/images/luxury1.jpg', '/images/luxury2.jpg'],
+      images: ['/images/adv.jpg'],
     },
     {
       id: 'adventure',
-      title: 'Adventure Package',
+      title: t('whatWeOffer.packages.adventure.title'),
       color: 'secondary',
       features: [
-        { icon: 'water', label: 'Jetski' },
-        { icon: 'bullseye', label: 'Paintball' },
-        { icon: 'swimmer', label: 'Kayaking or paddleboarding' },
-        { icon: 'motorcycle', label: 'Quad bikes' },
-        { icon: 'utensils', label: 'Farmhouse with BBQ' },
+        { icon: 'water', label: t('whatWeOffer.packages.adventure.features.0') },
+        { icon: 'bullseye', label: t('whatWeOffer.packages.adventure.features.1') },
+        { icon: 'swimmer', label: t('whatWeOffer.packages.adventure.features.2') },
+        { icon: 'motorcycle', label: t('whatWeOffer.packages.adventure.features.3') },
+        { icon: 'utensils', label: t('whatWeOffer.packages.adventure.features.4') },
       ],
-      images: ['/images/adventure3.webp', '/images/adventure2.webp'],
+      images: ['/images/add.jpg'],
     },
     {
       id: 'budget',
-      title: 'On Budget Package',
+      title: t('whatWeOffer.packages.budget.title'),
       color: 'accent',
       features: [
-        { icon: 'gamepad', label: 'Laser game' },
-        { icon: 'microphone', label: 'Karaoke or bowling' },
-        { icon: 'route', label: 'Full-day island tour' },
-        { icon: 'ship', label: 'Boat trip' },
-        { icon: 'home', label: 'Cozy private farmhouse' },
+        { icon: 'gamepad', label: t('whatWeOffer.packages.budget.features.0') },
+        { icon: 'microphone', label: t('whatWeOffer.packages.budget.features.1') },
+        { icon: 'route', label: t('whatWeOffer.packages.budget.features.2') },
+        { icon: 'ship', label: t('whatWeOffer.packages.budget.features.3') },
+        { icon: 'home', label: t('whatWeOffer.packages.budget.features.4') },
       ],
-      images: ['/images/game1.jpg', '/images/game2.jpg'],
+      images: ['/images/budd.jpg'],
     },
   ];
 
@@ -67,7 +74,7 @@ export default function PackagesSection() {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold font-heading text-black">
-            What We Offer
+            {t('whatWeOffer.title')}
           </h2>
         </div>
 
@@ -79,6 +86,7 @@ export default function PackagesSection() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.2 }}
               viewport={{ once: true }}
+              className="hover:scale-[1.02] transition-transform duration-300"
             >
               <Card
                 title={pkg.title}
@@ -86,25 +94,16 @@ export default function PackagesSection() {
                 features={pkg.features}
                 images={pkg.images}
                 action={
-                  <Button href="/what-we-offer" color={pkg.color} className="mt-8">
-                    Choose this package
+                  <Button
+                    href="/what-we-offer"
+                    color={pkg.color}
+                    className="mt-8"
+                    aria-label={`Choose ${pkg.title} package`}
+                  >
+                    {t('hero.discoverPackages')}
                   </Button>
                 }
               />
-
-              {/* Render images below Card */}
-              <div className="flex space-x-4 mt-6">
-                {pkg.images.map((src, i) => (
-                  <Image
-                    key={i}
-                    src={src}
-                    alt={`${pkg.title} image ${i + 1}`}
-                    width={150}
-                    height={100}
-                    className="rounded-md object-cover"
-                  />
-                ))}
-              </div>
             </motion.div>
           ))}
         </div>
