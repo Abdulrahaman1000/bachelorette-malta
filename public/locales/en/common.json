@@ -3,11 +3,11 @@
     "whatWeOffer": "What We Offer",
     "booking": "Booking",
     "contact": "Contact",
-    "toggleMenu": "Toggle menu"
+    "toggleMenu": "Toggle Menu"
   },
   "hero": {
-    "title": "Bachelor&Bacholorette",
-    "motto": "Before you say 'I do' – you say 'cheers' in Malta.",
+    "title": "Bachelor & Bachelorette Parties",
+    "motto": "Before saying 'I do', say 'cheers' in Malta.",
     "discoverPackages": "Discover Packages",
     "bookNow": "Book Now",
     "imageAlt": "Malta coastline"
@@ -16,33 +16,33 @@
     "title": "About Us",
     "motto": "Because every story deserves an unforgettable beginning.",
     "text": [
-      "Welcome to the world of Bachelor & Bachelorette Parties Malta, where ordinary days become legendary memories.",
-      "We specialize in planning bachelor and bachelorette parties that go beyond the usual – moments filled with emotion, adventure, laughter, and style.",
-      "Our mission is to create a tailor-made experience for every group – whether you're dreaming of a luxury yacht escape, an adrenaline-filled weekend, or simply quality time with friends in Malta's stunning surroundings.",
-      "We work exclusively with trusted partners and provide accommodation in stylish private farmhouses. From airport pickup to the final toast, we handle every detail.",
-      "We believe a bachelorette party should be unique, stress-free, and flawlessly planned.",
-      "And that's exactly what we deliver."
+      "Welcome to Bachelor & Bachelorette Parties Malta, where ordinary days turn into legendary memories.",
+      "We specialize in bachelor and bachelorette parties that go beyond the usual – moments filled with excitement, adventure, laughter, and style.",
+      "Our mission is to craft tailor-made experiences for every group – whether you're dreaming of a luxury yacht getaway, an adrenaline-filled weekend, or simply quality time with friends surrounded by Malta's stunning scenery.",
+      "We work exclusively with trusted partners and offer stays in elegant private farmhouses. From airport pickup to the final toast, we handle everything.",
+      "We believe every bachelorette party should be unique, stress-free, and perfectly organized.",
+      "And that’s exactly what we deliver."
     ],
-    "coreFeaturesTitle": "Our Core Features",
+    "coreFeaturesTitle": "Our Key Features",
     "features": [
       {
         "title": "Expert Planning",
-        "description": "Personalized itineraries tailored to your group",
+        "description": "Tailored itineraries designed for your group",
         "icon": "fa-calendar"
       },
       {
         "title": "Local Expertise",
-        "description": "Insider access to Malta.",
+        "description": "Exclusive access to the best of Malta",
         "icon": "fa-map-marker-alt"
       },
       {
         "title": "Group Sizes",
-        "description": "Perfect for groups of all sizes, from intimate gatherings to large celebrations.",
+        "description": "Ideal for all group sizes – from intimate gatherings to big parties",
         "icon": "fa-users"
       },
       {
         "title": "Full Support",
-        "description": "24/7 assistance throughout your stay to ensure everything runs smoothly.",
+        "description": "24/7 assistance throughout your stay to ensure a smooth experience",
         "icon": "fa-hands-helping"
       }
     ]
@@ -67,7 +67,7 @@
           "Paintball",
           "Kayaking or paddleboarding",
           "Quad biking",
-          "Farmhouse with BBQ"
+          "Farmhouse BBQ"
         ]
       },
       "budget": {
@@ -85,8 +85,8 @@
   "booking": {
     "title": "Booking",
     "form": {
-      "date": "Date Selection",
-      "country": "Country You're Coming From",
+      "date": "Select Date",
+      "country": "Country of Origin",
       "duration": "Duration",
       "durationOptions": {
         "3days": "3 Days",
@@ -96,11 +96,11 @@
       "packageOptions": {
         "luxury": "Luxury",
         "adventure": "Adventure",
-        "budget": "On Budget"
+        "budget": "Budget"
       },
       "bookingType": "Booking Type",
       "bookingTypeOptions": {
-        "binding": "Binding Booking",
+        "binding": "Confirmed Booking",
         "nonBinding": "Non-binding Booking"
       },
       "submit": "Submit"
@@ -108,12 +108,12 @@
   },
   "Contact": {
     "title": "Contact Us",
-    "description": "Get in touch to plan your perfect bachelorette party in Malta!",
-    "imageAlt": "Bachelorette party in Malta",
+    "description": "Get in touch and plan the perfect bachelor or bachelorette party in Malta!",
+    "imageAlt": "Bachelor/Bachelorette Party in Malta",
     "emailLabel": "Email",
     "facebookLabel": "Facebook",
     "instagramLabel": "Instagram",
-    "formTitle": "Send us a message",
+    "formTitle": "Send Us a Message",
     "form": {
       "name": "Your Name",
       "email": "Your Email",
@@ -123,59 +123,61 @@
   },
   "terms": {
     "title": "Terms and Conditions",
-    "subtitle": "Please read these terms carefully before booking your unforgettable Malta experience",
-    "heroImageAlt": "Malta coastline",
-    "intro": "At Bachelor/Bachelorette Parties Malta, we strive to provide exceptional experiences for your celebration. To ensure clarity and mutual understanding, we've outlined our terms and conditions below.",
+    "subtitle": "Please read these terms carefully before booking your unforgettable experience in Malta",
+    "heroImageAlt": "Malta Coastline",
+    "intro": "At Bachelor/Bachelorette Parties Malta, we are committed to providing exceptional experiences for your celebration. To ensure mutual understanding, please review the terms and conditions outlined below.",
     "section1": {
       "title": "Introduction",
-      "content": ["By booking or using our services, you agree to these terms and conditions set by \"Bachelor/Bachelorette Parties Malta\"."]
+      "content": [
+        "By booking or using our services, you agree to the terms and conditions set by 'Bachelor/Bachelorette Parties Malta'."
+      ]
     },
     "section2": {
-      "title": "Booking & Payment",
+      "title": "Booking and Payment",
       "content": [
         "All bookings must be confirmed in advance through our website or by direct contact.",
         "Full payment is required at the time of booking to secure your reservation.",
-        "Pricing may vary based on package, number of participants, and season."
+        "Prices may vary depending on the package, number of participants, and the season."
       ]
     },
     "section3": {
-      "title": "Cancellation & Refund Policy",
+      "title": "Cancellation and Refund Policy",
       "content": [
-        "All payments are final. No refunds will be issued under any circumstances, including cancellations, missed events, or changes of plans.",
-        "We strongly recommend clients purchase personal travel insurance in case of unexpected issues."
+        "All payments are final. No refunds will be issued under any circumstances, including cancellations, missed events, or schedule changes.",
+        "We strongly recommend that clients purchase personal travel insurance for unforeseen situations."
       ]
     },
     "section4": {
       "title": "Changes or Cancellations by Us",
       "content": [
-        "If an event must be canceled or modified due to safety concerns, weather, or availability, we will attempt to provide a suitable replacement activity.",
-        "No monetary refunds will be given. Replacements are offered at our discretion."
+        "If an event must be changed or canceled due to safety concerns, weather, or availability, we will do our best to provide a suitable replacement activity.",
+        "No monetary refunds will be issued. Replacements are offered at our discretion."
       ]
     },
     "section5": {
-      "title": "Responsibility & Liability",
+      "title": "Liability",
       "content": [
         "Participation in all events is at your own risk.",
-        "We are not liable for injuries, property damage, or losses.",
+        "We are not responsible for any injuries, property damage, or losses.",
         "All guests are expected to behave respectfully and responsibly."
       ]
     },
     "section6": {
-      "title": "Age & Conduct",
+      "title": "Age and Conduct",
       "content": [
-        "Minimum age is 18 for participation.",
-        "Inappropriate behavior may lead to removal from the event with no refund or compensation."
+        "The minimum age to participate is 18.",
+        "Inappropriate behavior may result in removal from the event with no refund or compensation."
       ]
     },
     "section7": {
-      "title": "Agreement",
+      "title": "Acceptance",
       "content": [
-        "By booking, you confirm that you understand and accept these terms fully."
+        "By booking, you confirm that you fully understand and accept these terms."
       ]
     },
-    "ctaTitle": "Ready for an Unforgettable Experience?",
-    "ctaDescription": "Now that you're familiar with our terms, let's start planning your dream bachelorette experience in Malta!",
-    "ctaButton": "Return to Booking"
+    "ctaTitle": "Ready for an unforgettable experience?",
+    "ctaDescription": "Now that you know the terms, let's start planning your dream bachelorette party in Malta!",
+    "ctaButton": "Back to Booking"
   },
   "footer": {
     "about_us": "About Us",
@@ -184,10 +186,10 @@
     "contact": "Contact",
     "privacy_policy": "Privacy Policy",
     "terms_conditions": "Terms & Conditions",
-    "description": "Creating unforgettable bachelorette experiences in the heart of the Mediterranean. Let us make your celebration extraordinary.",
+    "description": "Creating unforgettable bachelorette party experiences in the heart of the Mediterranean. Let us make your celebration extraordinary.",
     "quick_links": "Quick Links",
     "subscribe": "Subscribe",
-    "newsletter_text": "Join our newsletter for exclusive offers and updates.",
+    "newsletter_text": "Join our newsletter for exclusive deals and updates.",
     "email_placeholder": "Your email address",
     "subscribe_button": "Subscribe",
     "rights_reserved": "All rights reserved."
@@ -195,7 +197,7 @@
   "sections": {
     "booking": {
       "title": "Book Your Bachelorette Experience",
-      "subtitle": "Fill out the form below and get ready for an unforgettable celebration"
+      "subtitle": "Fill in the form below and get ready for an unforgettable celebration"
     }
   },
   "form": {
@@ -209,8 +211,8 @@
     "package": "Experience Package",
     "select_package": "-- Select Package --",
     "booking_type": "Booking Type",
-    "binding": "Binding Reservation",
-    "non_binding": "Non-binding Inquiry"
+    "binding": "Confirmed Booking",
+    "non_binding": "Non-binding Request"
   },
   "packages": {
     "luxury": {
@@ -220,7 +222,7 @@
       "title": "Adventure & Fun"
     },
     "budget": {
-      "title": "Budget Friendly"
+      "title": "Budget"
     },
     "custom": {
       "title": "Custom Experience"

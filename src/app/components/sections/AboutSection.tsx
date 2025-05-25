@@ -6,7 +6,7 @@ import React, { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 
 export default function AboutUsPage() {
-  const { t } = useTranslation('common');
+  const { t, ready } = useTranslation('common');
 
   const images = [
     "/images/splash1.jpg",
@@ -23,11 +23,20 @@ export default function AboutUsPage() {
     return () => clearInterval(interval);
   }, []);
 
-  const features = t('about.features', { returnObjects: true }) as {
+  // Wait for translations to be ready
+  if (!ready) {
+    return <div>Loading...</div>;
+  }
+
+  // Get features with fallback
+  const features = (t('about.features', { returnObjects: true }) || []) as {
     title: string;
     description: string;
     icon: string;
   }[];
+
+  // Get text paragraphs with fallback
+  const textParagraphs = (t('about.text', { returnObjects: true }) || []) as string[];
 
   return (
     <section id="about" className="py-20 bg-white">
@@ -63,7 +72,9 @@ export default function AboutUsPage() {
               <p className="text-xl text-gray-600 mb-6 italic">
                 {t('about.motto')}
               </p>
-              {(t('about.text', { returnObjects: true }) as string[]).map((paragraph, index) => (
+              
+              {/* Safe mapping for text paragraphs */}
+              {Array.isArray(textParagraphs) && textParagraphs.map((paragraph, index) => (
                 <p key={index} className="text-gray-700 mb-8">{paragraph}</p>
               ))}
 
@@ -72,7 +83,8 @@ export default function AboutUsPage() {
                   {t('about.coreFeaturesTitle')}
                 </h3>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                  {features.map((feature, index) => (
+                  {/* Safe mapping for features */}
+                  {Array.isArray(features) && features.map((feature, index) => (
                     <motion.div
                       key={index}
                       initial={{ opacity: 0, y: 20 }}

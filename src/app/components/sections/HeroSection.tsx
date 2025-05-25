@@ -2,20 +2,19 @@ import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import Button from '../ui/Button';
-// import { useTranslation } from '@/app/utils/translate'; // your i18n hook
 import BookingModal from '../BookingModal';
 import { useTranslation } from 'react-i18next';
 
 export default function HeroSection() {
-  const { t } = useTranslation();
+  const { t, ready } = useTranslation();
   const [isModalOpen, setIsModalOpen] = useState(false);
-
-  // Use translation keys, no fallback text here
-  const title = t('hero.title');
-  const motto = t('hero.motto');
 
   const openModal = () => setIsModalOpen(true);
   const closeModal = () => setIsModalOpen(false);
+
+  // Prevent hydration mismatch by ensuring translations are ready
+  const title = ready ? t('hero.title') : 'Bachelor&Bachelorette';
+  const motto = ready ? t('hero.motto') : '';
 
   return (
     <>
@@ -26,7 +25,7 @@ export default function HeroSection() {
         <div className="absolute inset-0 z-0">
           <Image
             src="/images/hero.jpeg"
-            alt={t('hero.imageAlt', 'Malta coastline')}
+            alt={ready ? t('hero.imageAlt', 'Malta coastline') : 'Malta coastline'}
             fill
             priority
             className="object-cover"
@@ -40,10 +39,16 @@ export default function HeroSection() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
           >
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 font-heading">
+            <h1 
+              className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 font-heading"
+              suppressHydrationWarning={true}
+            >
               {title}
             </h1>
-            <p className="text-base sm:text-lg md:text-xl text-white/90 mb-8">
+            <p 
+              className="text-base sm:text-lg md:text-xl text-white/90 mb-8"
+              suppressHydrationWarning={true}
+            >
               {motto}
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -53,7 +58,7 @@ export default function HeroSection() {
                 size="lg"
                 className="w-full sm:w-auto"
               >
-                {t('hero.discoverPackages')}
+                {ready ? t('hero.discoverPackages') : 'Discover Packages'}
               </Button>
               <Button
                 type="button"
@@ -63,7 +68,7 @@ export default function HeroSection() {
                 onClick={openModal}
                 className="w-full sm:w-auto"
               >
-                {t('hero.bookNow')}
+                {ready ? t('hero.bookNow') : 'Book Now'}
               </Button>
             </div>
           </motion.div>

@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
-import { usePathname } from 'next/navigation';
+import { usePathname, useRouter } from 'next/navigation';
 import LanguageSwitcher from './LanguageSwitcher';
 import { useTranslation } from 'react-i18next';
 
@@ -11,11 +11,11 @@ interface HeaderProps {
 }
 
 export default function Header({ locale }: HeaderProps) {
-  const { t } = useTranslation('common'); // Specify the namespace
-
+  const { t, ready } = useTranslation('common');
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const pathname = usePathname();
+  const router = useRouter();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -26,26 +26,64 @@ export default function Header({ locale }: HeaderProps) {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  // No longer needed since LanguageSwitcher handles this internally
-  // const getCurrentRoute = () => {
-  //   const pathWithoutLocale = pathname.replace(`/${locale}`, '') || '/';
-  //   return pathWithoutLocale;
-  // };
-
   const navItems = [
-    { 
-      name: t('header.whatWeOffer'), 
-      href: `/${locale}/what-we-offer` 
+    {
+      name: t('header.whatWeOffer'),
+      href: `/${locale}/what-we-offer`,
     },
-    { 
-      name: t('header.booking'), 
-      href: `/${locale}/#booking` 
+    {
+      name: t('header.booking'),
+      href: `/${locale}/#booking`,
     },
-    { 
-      name: t('header.contact'), 
-      href: `/${locale}/#contact` 
+    {
+      name: t('header.contact'),
+      href: `/${locale}/#contact`,
     },
   ];
+
+  if (!ready) {
+    return (
+      <header
+        className={`fixed top-0 w-full z-50 transition-all duration-300 ${
+          isScrolled ? 'bg-white/95 shadow-md backdrop-blur-sm' : 'bg-black/60'
+        }`}
+      >
+        <div className="container mx-auto px-4 py-4">
+          <div className="flex items-center justify-between">
+            <Link href={`/${locale}`} className="flex items-center">
+              <span
+                className={`text-2xl font-bold ${
+                  isScrolled ? 'text-black' : 'text-white'
+                }`}
+              >
+                Bachelor&Bachelorette
+              </span>
+            </Link>
+          </div>
+        </div>
+      </header>
+    );
+  }
+
+  const handleNavClick = (
+    e: React.MouseEvent,
+    href: string
+  ) => {
+    const isAnchorLink = href.includes('#');
+    const basePath = `/${locale}`;
+    if (isAnchorLink && pathname === basePath) {
+      e.preventDefault();
+      const id = href.split('#')[1];
+      const el = document.getElementById(id);
+      if (el) {
+        el.scrollIntoView({ behavior: 'smooth' });
+        setIsMenuOpen(false); // Close mobile menu
+      }
+    } else {
+      // Navigate normally
+      router.push(href);
+    }
+  };
 
   return (
     <header
@@ -61,6 +99,7 @@ export default function Header({ locale }: HeaderProps) {
               className={`text-2xl font-bold ${
                 isScrolled ? 'text-black' : 'text-white'
               }`}
+              suppressHydrationWarning={true}
             >
               {t('hero.title')}
             </span>
@@ -70,17 +109,18 @@ export default function Header({ locale }: HeaderProps) {
           <div className="hidden md:flex items-center space-x-8">
             <nav className="flex space-x-6">
               {navItems.map((item) => (
-                <Link
+                <a
                   key={item.name}
                   href={item.href}
+                  onClick={(e) => handleNavClick(e, item.href)}
                   className={`font-medium transition duration-200 ${
-                    isScrolled 
-                      ? 'text-black hover:text-primary-600' 
+                    isScrolled
+                      ? 'text-black hover:text-primary-600'
                       : 'text-white hover:text-primary-300'
                   }`}
                 >
                   {item.name}
-                </Link>
+                </a>
               ))}
             </nav>
 
@@ -132,14 +172,14 @@ export default function Header({ locale }: HeaderProps) {
           <div className="md:hidden mt-4 py-4 bg-black/90 rounded-lg shadow-lg text-white">
             <nav className="flex flex-col space-y-3">
               {navItems.map((item) => (
-                <Link
+                <a
                   key={item.name}
                   href={item.href}
+                  onClick={(e) => handleNavClick(e, item.href)}
                   className="px-4 py-2 hover:bg-white/10"
-                  onClick={() => setIsMenuOpen(false)}
                 >
                   {item.name}
-                </Link>
+                </a>
               ))}
             </nav>
             <div className="mt-4 px-4 pt-4 border-t border-white/20">

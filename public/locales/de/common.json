@@ -47,41 +47,42 @@
       }
     ]
   },
- "whatWeOffer": {
-    "title": "What We Offer",
-    "packages": {
-      "luxury": {
-        "title": "Luxury Package",
-        "features": [
-          "Limousine ride",
-          "Private yacht with drinks",
-          "Go-kart racing",
-          "Private farmhouse with pool",
-          "VIP nightlife"
-        ]
-      },
-      "adventure": {
-        "title": "Adventure Package",
-        "features": [
-          "Jet skiing",
-          "Paintball",
-          "Kayaking or paddleboarding",
-          "Quad biking",
-          "Farmhouse with BBQ"
-        ]
-      },
-      "budget": {
-        "title": "Budget Package",
-        "features": [
-          "Laser tag",
-          "Karaoke or bowling",
-          "Full-day island tour",
-          "Boat trip",
-          "Cozy private farmhouse"
-        ]
-      }
+"whatWeOffer": {
+  "title": "Was wir anbieten",
+  "packages": {
+    "luxury": {
+      "title": "Luxuspaket",
+      "features": [
+        "Limousinenfahrt",
+        "Private Yacht mit Getränken",
+        "Go-Kart-Rennen",
+        "Privates Bauernhaus mit Pool",
+        "VIP-Nachtleben"
+      ]
+    },
+    "adventure": {
+      "title": "Abenteuerpaket",
+      "features": [
+        "Jet-Ski fahren",
+        "Paintball",
+        "Kajak- oder Paddleboarding",
+        "Quadfahren",
+        "Bauernhaus mit Grill"
+      ]
+    },
+    "budget": {
+      "title": "Budgetpaket",
+      "features": [
+        "Lasertag",
+        "Karaoke oder Bowling",
+        "Ganztägige Inselrundfahrt",
+        "Bootsfahrt",
+        "Gemütliches privates Bauernhaus"
+      ]
     }
-  },
+  }
+},
+
   "booking": {
     "title": "Buchung",
     "form": {

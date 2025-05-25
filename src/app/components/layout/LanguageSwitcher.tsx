@@ -2,27 +2,16 @@
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import { usePathname, useRouter } from 'next/navigation';
-import { useTranslation } from 'react-i18next';
 import { languages, locales } from 'locale.config';
 
 export default function LanguageSwitcher() {
   const [isOpen, setIsOpen] = useState(false);
   const pathname = usePathname();
   const router = useRouter();
-  const { i18n } = useTranslation();
   
-  // Get current locale directly from URL
+  // Get current locale from pathname
   const currentLocale = pathname.split('/')[1] || 'en';
   const currentLanguage = languages[currentLocale as keyof typeof languages] || languages.en;
-
-  // Debugging - log locale changes
-  useEffect(() => {
-    console.log('Current active locale:', currentLocale);
-    // Sync i18n with current locale if needed
-    if (i18n.language !== currentLocale) {
-      i18n.changeLanguage(currentLocale);
-    }
-  }, [currentLocale, i18n]);
 
   const handleLanguageChange = async (newLocale: string) => {
     if (!locales.includes(newLocale)) {
@@ -39,9 +28,6 @@ export default function LanguageSwitcher() {
     document.cookie = `NEXT_LOCALE=${newLocale}; path=/; max-age=31536000; SameSite=Lax`;
     
     try {
-      // Change i18n language first
-      await i18n.changeLanguage(newLocale);
-      
       // Navigate to new URL
       const newUrl = `/${newLocale}/${pathWithoutLocale}`;
       router.push(newUrl);
