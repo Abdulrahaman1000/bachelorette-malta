@@ -1,12 +1,19 @@
+// src/app/[locale]/page.tsx
 import { Suspense } from "react";
-import ClientPage from "./ClientPage";
+import HomePage from "../page";
 
-export default async function Page({ params }: { params: { locale: string } }) {
-  const { locale } = params;
 
+interface PageProps {
+  params: Promise<{ locale: string }>;
+  searchParams?: Promise<{ [key: string]: string | string[] | undefined }>;
+}
+
+export default async function Page({ params }: PageProps) {
+  const { locale } = await params;
+  
   return (
     <Suspense fallback={<div>Loading...</div>}>
-      <ClientPage locale={locale} />
+      <HomePage locale={locale} />
     </Suspense>
   );
 }

@@ -23,47 +23,64 @@ interface Package {
 export default function PackagesSection() {
   const { t } = useTranslation('common');
   
+  // Get feature arrays with proper fallbacks
+  const luxuryFeatures = t('whatWeOffer.packages.luxury.features', { 
+    returnObjects: true, 
+    defaultValue: ['Feature 1', 'Feature 2', 'Feature 3', 'Feature 4', 'Feature 5'] 
+  }) as string[];
+  
+  const adventureFeatures = t('whatWeOffer.packages.adventure.features', { 
+    returnObjects: true, 
+    defaultValue: ['Feature 1', 'Feature 2', 'Feature 3', 'Feature 4', 'Feature 5'] 
+  }) as string[];
+  
+  const budgetFeatures = t('whatWeOffer.packages.budget.features', { 
+    returnObjects: true, 
+    defaultValue: ['Feature 1', 'Feature 2', 'Feature 3', 'Feature 4', 'Feature 5'] 
+  }) as string[];
+
   // Debug: Log translations to see if they're working
   console.log('Luxury title:', t('whatWeOffer.packages.luxury.title'));
-  console.log('First luxury feature:', t('whatWeOffer.packages.luxury.features.0'));
+  console.log('Luxury features:', luxuryFeatures);
+  console.log('First luxury feature:', Array.isArray(luxuryFeatures) ? luxuryFeatures[0] : 'No features');
 
   const packages: Package[] = [
     {
       id: 'luxury',
-      title: t('whatWeOffer.packages.luxury.title'),
+      title: t('whatWeOffer.packages.luxury.title', { defaultValue: 'Luxury Package' }),
       color: 'primary',
       features: [
-        { icon: 'car-side', label: t('whatWeOffer.packages.luxury.features.0') },
-        { icon: 'ship', label: t('whatWeOffer.packages.luxury.features.1') },
-        { icon: 'flag-checkered', label: t('whatWeOffer.packages.luxury.features.2') },
-        { icon: 'home', label: t('whatWeOffer.packages.luxury.features.3') },
-        { icon: 'glass-cheers', label: t('whatWeOffer.packages.luxury.features.4') },
+        { icon: 'car-side', label: Array.isArray(luxuryFeatures) && luxuryFeatures[0] ? luxuryFeatures[0] : 'Luxury Transport' },
+        { icon: 'ship', label: Array.isArray(luxuryFeatures) && luxuryFeatures[1] ? luxuryFeatures[1] : 'Yacht Experience' },
+        { icon: 'flag-checkered', label: Array.isArray(luxuryFeatures) && luxuryFeatures[2] ? luxuryFeatures[2] : 'VIP Activities' },
+        { icon: 'home', label: Array.isArray(luxuryFeatures) && luxuryFeatures[3] ? luxuryFeatures[3] : 'Premium Accommodation' },
+        { icon: 'glass-cheers', label: Array.isArray(luxuryFeatures) && luxuryFeatures[4] ? luxuryFeatures[4] : 'Exclusive Dining' },
       ],
       images: ['/images/adv.jpg'],
     },
     {
       id: 'adventure',
-      title: t('whatWeOffer.packages.adventure.title'),
+      title: t('whatWeOffer.packages.adventure.title', { defaultValue: 'Adventure Package' }),
       color: 'secondary',
       features: [
-        { icon: 'water', label: t('whatWeOffer.packages.adventure.features.0') },
-        { icon: 'bullseye', label: t('whatWeOffer.packages.adventure.features.1') },
-        { icon: 'swimmer', label: t('whatWeOffer.packages.adventure.features.2') },
-        { icon: 'motorcycle', label: t('whatWeOffer.packages.adventure.features.3') },
-        { icon: 'utensils', label: t('whatWeOffer.packages.adventure.features.4') },
+        { icon: 'water', label: Array.isArray(adventureFeatures) && adventureFeatures[0] ? adventureFeatures[0] : 'Water Sports' },
+        { icon: 'bullseye', label: Array.isArray(adventureFeatures) && adventureFeatures[1] ? adventureFeatures[1] : 'Target Activities' },
+        { icon: 'swimmer', label: Array.isArray(adventureFeatures) && adventureFeatures[2] ? adventureFeatures[2] : 'Swimming' },
+        { icon: 'motorcycle', label: Array.isArray(adventureFeatures) && adventureFeatures[3] ? adventureFeatures[3] : 'Adventure Tours' },
+        { icon: 'utensils', label: Array.isArray(adventureFeatures) && adventureFeatures[4] ? adventureFeatures[4] : 'Local Dining' },
       ],
       images: ['/images/add.jpg'],
     },
     {
       id: 'budget',
-      title: t('whatWeOffer.packages.budget.title'),
+      title: t('whatWeOffer.packages.budget.title', { defaultValue: 'Budget Package' }),
       color: 'accent',
       features: [
-        { icon: 'gamepad', label: t('whatWeOffer.packages.budget.features.0') },
-        { icon: 'microphone', label: t('whatWeOffer.packages.budget.features.1') },
-        { icon: 'route', label: t('whatWeOffer.packages.budget.features.2') },
-        { icon: 'ship', label: t('whatWeOffer.packages.budget.features.3') },
-        { icon: 'home', label: t('whatWeOffer.packages.budget.features.4') },
+        { icon: 'gamepad', label: Array.isArray(budgetFeatures) && budgetFeatures[0] ? budgetFeatures[0] : 'Fun Activities' },
+        { icon: 'microphone', label: Array.isArray(budgetFeatures) && budgetFeatures[1] ? budgetFeatures[1] : 'Entertainment' },
+        { icon: 'route', label: Array.isArray(budgetFeatures) && budgetFeatures[2] ? budgetFeatures[2] : 'City Tours' },
+        { icon: 'ship', label: Array.isArray(budgetFeatures) && budgetFeatures[3] ? budgetFeatures[3] : 'Boat Trips' },
+        { icon: 'home', label: Array.isArray(budgetFeatures) && budgetFeatures[4] ? budgetFeatures[4] : 'Accommodation' },
       ],
       images: ['/images/budd.jpg'],
     },
@@ -74,7 +91,7 @@ export default function PackagesSection() {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold font-heading text-black">
-            {t('whatWeOffer.title')}
+            {t('whatWeOffer.title', { defaultValue: 'What We Offer' })}
           </h2>
         </div>
 
@@ -100,7 +117,7 @@ export default function PackagesSection() {
                     className="mt-8"
                     aria-label={`Choose ${pkg.title} package`}
                   >
-                    {t('hero.discoverPackages')}
+                    {t('hero.discoverPackages', { defaultValue: 'Discover Packages' })}
                   </Button>
                 }
               />

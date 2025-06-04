@@ -21,21 +21,18 @@ export default function AboutUsPage() {
       setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
     }, 5000);
     return () => clearInterval(interval);
-  }, []);
+  }, [images.length]); // add images.length to dependency to fix warning
 
-  // Wait for translations to be ready
   if (!ready) {
     return <div>Loading...</div>;
   }
 
-  // Get features with fallback
   const features = (t('about.features', { returnObjects: true }) || []) as {
     title: string;
     description: string;
     icon: string;
   }[];
 
-  // Get text paragraphs with fallback
   const textParagraphs = (t('about.text', { returnObjects: true }) || []) as string[];
 
   return (
@@ -73,7 +70,6 @@ export default function AboutUsPage() {
                 {t('about.motto')}
               </p>
               
-              {/* Safe mapping for text paragraphs */}
               {Array.isArray(textParagraphs) && textParagraphs.map((paragraph, index) => (
                 <p key={index} className="text-gray-700 mb-8">{paragraph}</p>
               ))}
@@ -83,7 +79,6 @@ export default function AboutUsPage() {
                   {t('about.coreFeaturesTitle')}
                 </h3>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                  {/* Safe mapping for features */}
                   {Array.isArray(features) && features.map((feature, index) => (
                     <motion.div
                       key={index}

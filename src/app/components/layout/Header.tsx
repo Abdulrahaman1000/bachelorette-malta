@@ -11,13 +11,16 @@ interface HeaderProps {
 }
 
 export default function Header({ locale }: HeaderProps) {
-  const { t, ready } = useTranslation('common');
+  const { t } = useTranslation('common');
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isMounted, setIsMounted] = useState(false);
   const pathname = usePathname();
   const router = useRouter();
 
   useEffect(() => {
+    setIsMounted(true);
+    
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
     };
@@ -26,44 +29,21 @@ export default function Header({ locale }: HeaderProps) {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  // Define fallback navigation items to prevent hydration mismatch
   const navItems = [
     {
-      name: t('header.whatWeOffer'),
+      name: t('header.whatWeOffer', { defaultValue: 'What We Offer' }),
       href: `/${locale}/what-we-offer`,
     },
     {
-      name: t('header.booking'),
+      name: t('header.booking', { defaultValue: 'Booking' }),
       href: `/${locale}/#booking`,
     },
     {
-      name: t('header.contact'),
+      name: t('header.contact', { defaultValue: 'Contact' }),
       href: `/${locale}/#contact`,
     },
   ];
-
-  if (!ready) {
-    return (
-      <header
-        className={`fixed top-0 w-full z-50 transition-all duration-300 ${
-          isScrolled ? 'bg-white/95 shadow-md backdrop-blur-sm' : 'bg-black/60'
-        }`}
-      >
-        <div className="container mx-auto px-4 py-4">
-          <div className="flex items-center justify-between">
-            <Link href={`/${locale}`} className="flex items-center">
-              <span
-                className={`text-2xl font-bold ${
-                  isScrolled ? 'text-black' : 'text-white'
-                }`}
-              >
-                Bachelor&Bachelorette
-              </span>
-            </Link>
-          </div>
-        </div>
-      </header>
-    );
-  }
 
   const handleNavClick = (
     e: React.MouseEvent,
@@ -99,9 +79,8 @@ export default function Header({ locale }: HeaderProps) {
               className={`text-2xl font-bold ${
                 isScrolled ? 'text-black' : 'text-white'
               }`}
-              suppressHydrationWarning={true}
             >
-              {t('hero.title')}
+              {t('hero.title', { defaultValue: 'Bachelor&Bachelorette' })}
             </span>
           </Link>
 
@@ -110,7 +89,7 @@ export default function Header({ locale }: HeaderProps) {
             <nav className="flex space-x-6">
               {navItems.map((item) => (
                 <a
-                  key={item.name}
+                  key={item.href}
                   href={item.href}
                   onClick={(e) => handleNavClick(e, item.href)}
                   className={`font-medium transition duration-200 ${
@@ -118,6 +97,7 @@ export default function Header({ locale }: HeaderProps) {
                       ? 'text-black hover:text-primary-600'
                       : 'text-white hover:text-primary-300'
                   }`}
+                  suppressHydrationWarning={true}
                 >
                   {item.name}
                 </a>
@@ -133,7 +113,7 @@ export default function Header({ locale }: HeaderProps) {
               isScrolled ? 'text-black' : 'text-white'
             } hover:text-primary-600 focus:outline-none`}
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            aria-label={t('header.toggleMenu')}
+            aria-label={t('header.toggleMenu', { defaultValue: 'Toggle menu' })}
           >
             {isMenuOpen ? (
               <svg
@@ -167,16 +147,17 @@ export default function Header({ locale }: HeaderProps) {
           </button>
         </div>
 
-        {/* Mobile Menu */}
-        {isMenuOpen && (
+        {/* Mobile Menu - Only render after mounting to prevent hydration issues */}
+        {isMounted && isMenuOpen && (
           <div className="md:hidden mt-4 py-4 bg-black/90 rounded-lg shadow-lg text-white">
             <nav className="flex flex-col space-y-3">
               {navItems.map((item) => (
                 <a
-                  key={item.name}
+                  key={item.href}
                   href={item.href}
                   onClick={(e) => handleNavClick(e, item.href)}
                   className="px-4 py-2 hover:bg-white/10"
+                  suppressHydrationWarning={true}
                 >
                   {item.name}
                 </a>
