@@ -15,7 +15,13 @@ export default function ClientLayout({
 }) {
   return (
     <LanguageProvider initialLocale={locale}>
-      <Header locale={locale} />
+      <Header locale={locale} translations={{
+        logoTitle: '',
+        whatWeOffer: '',
+        booking: '',
+        contact: '',
+        toggleMenu: ''
+      }} />
       <main>{children}</main>
       <Footer locale={locale} />
     </LanguageProvider>

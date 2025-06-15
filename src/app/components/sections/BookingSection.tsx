@@ -5,7 +5,6 @@ import { motion } from 'framer-motion';
 import Image from 'next/image';
 import { useTranslation } from 'react-i18next';
 
-
 export default function TermsAndConditionsPage() {
   const { t } = useTranslation();
 
@@ -26,6 +25,29 @@ export default function TermsAndConditionsPage() {
     }
   };
 
+  // Helper function to safely get content as array
+  const getContentArray = (key: string): string[] => {
+    try {
+      const content = t(key, { returnObjects: true });
+      
+      // If it's already an array, check if all items are strings
+      if (Array.isArray(content)) {
+        return content.filter((item): item is string => typeof item === 'string');
+      }
+      
+      // If it's a string, wrap it in an array
+      if (typeof content === 'string') {
+        return [content];
+      }
+      
+      // Fallback for missing translations
+      return [`Content for ${key} not found`];
+    } catch (error) {
+      console.warn(`Translation error for key: ${key}`, error);
+      return [`Content for ${key} not available`];
+    }
+  };
+
   return (
     <>
       {/* Hero Section */}
@@ -33,7 +55,7 @@ export default function TermsAndConditionsPage() {
         <div className="absolute inset-0 overflow-hidden z-0">
           <Image
             src="/images/hero.jpeg"
-            alt={t('terms.heroImageAlt')}
+            alt={t('terms.heroImageAlt') || 'Terms and Conditions'}
             fill
             className="object-cover opacity-20"
             priority
@@ -49,7 +71,7 @@ export default function TermsAndConditionsPage() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
             >
-              {t('terms.title')}
+              {t('terms.title') || 'Terms and Conditions'}
             </motion.h1>
             <motion.div
               className="h-1 w-24 bg-white/60 mx-auto mb-8"
@@ -63,7 +85,7 @@ export default function TermsAndConditionsPage() {
               animate={{ opacity: 1 }}
               transition={{ duration: 0.8, delay: 0.2 }}
             >
-              {t('terms.subtitle')}
+              {t('terms.subtitle') || 'Please read our terms and conditions carefully'}
             </motion.p>
           </div>
         </div>
@@ -77,7 +99,7 @@ export default function TermsAndConditionsPage() {
             <div className="bg-gradient-to-r from-pink-500 to-purple-600 p-1">
               <div className="bg-white p-6 md:p-8">
                 <p className="text-lg text-gray-700 mb-6">
-                  {t('terms.intro')}
+                  {t('terms.intro') || 'Welcome to our terms and conditions page.'}
                 </p>
               </div>
             </div>
@@ -96,11 +118,11 @@ export default function TermsAndConditionsPage() {
                       {i + 1}
                     </div>
                     <h2 className="text-2xl font-bold ml-4 font-heading text-gray-800">
-                      {t(`terms.section${i + 1}.title`)}
+                      {t(`terms.section${i + 1}.title`) || `Section ${i + 1}`}
                     </h2>
                   </div>
                   <div className="ml-16 space-y-3">
-                    {(t(`terms.section${i + 1}.content`, { returnObjects: true }) as string[]).map((line, index) => (
+                    {getContentArray(`terms.section${i + 1}.content`).map((line, index) => (
                       <p className="text-gray-700" key={index}>{line}</p>
                     ))}
                   </div>
@@ -109,13 +131,17 @@ export default function TermsAndConditionsPage() {
             </motion.div>
 
             <div className="bg-gradient-to-r from-pink-500 to-purple-600 p-8 text-center">
-              <h3 className="text-2xl font-bold text-white mb-4">{t('terms.ctaTitle')}</h3>
-              <p className="text-white/90 mb-6">{t('terms.ctaDescription')}</p>
+              <h3 className="text-2xl font-bold text-white mb-4">
+                {t('terms.ctaTitle') || 'Ready to Continue?'}
+              </h3>
+              <p className="text-white/90 mb-6">
+                {t('terms.ctaDescription') || 'Go back to continue with your booking.'}
+              </p>
               <button 
                 className="bg-white text-purple-600 font-bold py-3 px-8 rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
                 onClick={() => window.history.back()}
               >
-                {t('terms.ctaButton')}
+                {t('terms.ctaButton') || 'Go Back'}
               </button>
             </div>
           </div>
